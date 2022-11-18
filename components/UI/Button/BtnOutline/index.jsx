@@ -6,7 +6,7 @@ const ButtonOutline = ({ className, children, tag, ...props }) => {
 
 	return (
 		<TagName
-			className={BOP.ButtonOutline + " " + className || null}
+			className={`${BOP.ButtonOutline}  ${className || null}`}
 			{...props}
 		>
 			{children}

@@ -26,6 +26,11 @@
 			"@/styles/*": ["styles/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"components/UI/Button/indexs.jsx"
+	],
 	"exclude": ["node_modules"]
 }

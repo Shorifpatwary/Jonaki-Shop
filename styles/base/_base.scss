@@ -7,7 +7,7 @@
 }
 :root {
 	// if you want to increase or decrease your font size , modify 0.5vw width. not 10px .
-	font-size: calc(0.5vw + 10px);
+	font-size: calc(0.5vw + 13px);
 	scroll-behavior: smooth;
 }
 
@@ -15,8 +15,7 @@ body {
 	font-family: $body-font-family;
 	color: $body-text-color;
 	background-color: $body-bg;
-	line-height: $line-height-3;
-	// apply line height according to you UI.( optional )
+	line-height: $line-height-2;
 }
 
 hr {
@@ -33,48 +32,49 @@ h2,
 h1 {
 	margin-top: 0;
 	margin-bottom: 0.5rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: $line-height-2;
+	color: $tx-color-primary;
 }
 
 h1 {
-	font-size: calc(1.375rem + 1.5vw);
+	font-size: calc(1.8rem + 0.5vw);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
 	h1 {
-		font-size: calc(2rem + 2vw);
+		font-size: calc(2rem + 1vw);
 	}
 }
 
 h2 {
-	font-size: calc(1.325rem + 0.9vw);
+	font-size: calc(1.6rem + 0.4vw);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
 	h2 {
-		font-size: calc(1.8rem + 2vw);
+		font-size: calc(1.8rem + 1vw);
 	}
 }
 
 h3 {
-	font-size: calc(1.3rem + 0.6vw);
+	font-size: calc(1.4rem + 0.3vw);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
 	h3 {
-		font-size: calc(1.5rem + 2vw);
+		font-size: calc(1.5rem + 1vw);
 	}
 }
 
 h4 {
-	font-size: calc(1.275rem + 0.3vw);
+	font-size: calc(1.3rem + 0.2vw);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
 	h4 {
-		font-size: calc(1.5rem + 1.8vw);
+		font-size: calc(1.2rem + 1vw);
 	}
 }
 
 h5 {
-	font-size: 1.25rem;
+	font-size: 1.3rem;
 }
 
 h6 {
@@ -84,14 +84,11 @@ h6 {
 p {
 	font-size: calc(16px + 0.3vw);
 	font-weight: 300;
-	color: $color-primary;
-	// margin-bottom: 0.8rem;
+	margin-bottom: 0.8rem;
 	// line height and font family will be inherited from body
 }
 address {
 	margin-bottom: 1rem;
-	font-style: normal;
-	line-height: inherit;
 }
 
 ol,
@@ -119,7 +116,14 @@ blockquote {
 small {
 	font-size: 0.875em;
 }
-
+:link {
+	color: $link-color;
+	cursor: pointer;
+	transition: $transition-1;
+	&:hover {
+		color: $link-hover-color;
+	}
+}
 a {
 	color: $link-color;
 	cursor: pointer;
@@ -130,13 +134,11 @@ a {
 		color: $link-hover-color;
 	}
 	&:focus {
-		outline: inherit;
+		outline: $color-primary;
 	}
 }
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-	color: inherit;
+a:visited {
+	color: $color-secondary; //
 }
 
 i {
@@ -169,6 +171,7 @@ svg {
 	width: 100%;
 	vertical-align: middle;
 	object-fit: cover;
+	object-position: center;
 }
 
 table {
@@ -182,38 +185,34 @@ caption {
 	text-align: left;
 }
 
-th {
-	text-align: inherit;
-}
-
 thead,
 tbody,
 tfoot,
 tr,
 td,
 th {
-	border-color: inherit;
-	border-style: solid;
-	border-width: 0;
+	border: $br-1;
 }
 
 label {
 	display: inline-block;
 }
-
+button {
+	text-align: center;
+	transition: $transition-1;
+	font-family: $ff-primary;
+	border-radius: 12px;
+}
 input,
 button,
 select,
 optgroup,
 textarea {
 	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
 }
 
 select:disabled {
-	opacity: 1;
+	opacity: 0.6;
 }
 
 button:not(:disabled),
@@ -229,8 +228,7 @@ legend {
 	padding: 0;
 	margin-bottom: 0.5rem;
 	font-size: calc(1.275rem + 0.3vw);
-	line-height: inherit;
-	@media only screen and (min-width: 1200px) {
+	@media only screen and (min-width: 1600px) {
 		font-size: 1.5rem;
 	}
 }
@@ -241,7 +239,7 @@ legend {
 }
 input,
 textarea {
-	font-size: 16px;
+	font-size: 1rem;
 	// text-align: center;
 	caret-color: $color-primary;
 	&::placeholder {
@@ -250,14 +248,18 @@ textarea {
 		color: $color-primary;
 	}
 }
+input:invalid {
+	border: 1px solid red;
+}
+input:valid {
+	border: 1px solid rgb(68, 223, 68);
+}
 
 ::-webkit-file-upload-button {
-	font: inherit;
 	@extend button;
 }
 
 ::file-selector-button {
-	font: inherit;
 	@extend button;
 }
 

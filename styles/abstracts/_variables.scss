@@ -1,25 +1,32 @@
 @import "./helper-variable";
 // ====== WEBSITE COLORS =======
-$color-primary: $blue-5;
+$color-primary: #6a983c;
 
-$color-secondary: $red-3;
+$color-secondary: #e5704b;
 
-$color-tertiary: $gray-3;
+// $color-tertiary: $gray-3;
 
-$color-quaternary: $white;
+// $color-quaternary: $white;
+
+// Text colors
+$tx-color-primary: #151515;
+$tx-color-secondary: #575757;
+$tx-color-tertiary: $color-primary;
+// $tx-color-quaternary: #20202a;
 
 // ====== WEBSITE BG COLORS =======
 
-$bg-primary: $white;
-$bg-secondary: #fde4e4;
-$bg-tertiary: $color-secondary;
+$bg-primary: #ffffff;
+$bg-secondary: #f9f9f9;
+// $bg-tertiary: $color-secondary;
 
 $body-bg: $bg-primary;
-$modal-bg: $grey-ts-2;
+// $btn-bg-primary: darken($color-primary, 10%);
+$modal-bg: $bg-secondary;
 
-$body-text-color: $gray-5;
+$body-text-color: $bg-secondary;
 // LINK COLORS
-$link-color: $color-primary;
+$link-color: $color-primary; // #6A983C
 $link-hover-color: $color-secondary;
 // BOX SHADOW
 $bx-sw-color-1: $gray-ts-1;
@@ -32,27 +39,27 @@ $bx-sw-color-1: $gray-ts-1;
 $body-font-size: $text-3;
 // SETUP WEBSITE FONT SIZE BY FOLLOWING YOUR UI.
 // for only text or p elements
-$text-x-sm: 0.7rem;
-$text-sm: $text-1;
-$text-md: $text-2;
-$text-lg: $text-3;
-$text-x-lg: $text-4;
+// $text-x-sm: 0.7rem;
+// $text-sm: $text-1;
+// $text-md: $text-2;
+// $text-lg: $text-3;
+// $text-x-lg: $text-4;
 
-$title-x-sm: $text-5;
-$title-sm: $text-7;
-$title-md: $text-9;
-$title-lg: $text-11;
-$title-x-lg: $text-13;
+// $title-x-sm: $text-5;
+// $title-sm: $text-7;
+// $title-md: $text-9;
+// $title-lg: $text-11;
+// $title-x-lg: $text-13;
 
-$display-1: $text-15;
-$display-2: 4.5rem;
-$display-3: 5rem;
-$display-4: 5.5rem;
-$display-5: 6rem;
+// $display-1: $text-15;
+// $display-2: 4.5rem;
+// $display-3: 5rem;
+// $display-4: 5.5rem;
+// $display-5: 6rem;
 
 // ========== FONT FAMILY =======
-$ff-primary: "Lato", sans-serif;
-$ff-secondary: "Poppins", sans-serif;
+$ff-primary: "Poppins", "Lato", sans-serif;
+$ff-secondary: "Open Sans", "Poppins", sans-serif;
 
 $body-font-family: $ff-primary;
 $font-monospace: monospace, "Courier New", Courier;
@@ -68,7 +75,7 @@ $body-font-weight: $fw-regular;
 
 // ========= LINE HEIGHT =======
 $line-height-1: 1;
-$line-height-2: 1.25;
+$line-height-2: 1.25; // current project l h 19px ;
 $line-height-3: 1.5;
 $line-height-4: 1.75;
 $line-height-5: 2;
@@ -88,6 +95,9 @@ $bx-sw-2: 0 1rem 2rem $black-ts-2;
 $bx-sw-3: 0 0.5rem 1rem $black-ts-2;
 $bx-sw-4: 0 3rem 6rem $black-ts-1;
 //  BORDER RADIUS
+$br-1: 1px solid #d1d1d1;
+$btn-border-1: 2px solid darken($color-primary, 14%);
+
 $br-round: 5px;
 $br-rounded: 10px;
 $br-circle: 50%;

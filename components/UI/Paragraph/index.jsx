@@ -1,10 +1,10 @@
 import React from "react";
-
+import Style from "@/UiComponent/Paragraph/paragraph.module.scss";
 const Paragraph = (props) => {
 	return (
 		<p
 			id={props?.name || ""}
-			className={`_paragraph ${props?.className || ""}`}
+			className={`${Style.paragraph}  ${props?.className || ""}`}
 		>
 			{props?.children || ""}
 		</p>
