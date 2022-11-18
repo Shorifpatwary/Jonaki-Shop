@@ -1,0 +1,154 @@
+// COLORS
+// ======== MAIN COLORS ======
+// white to black
+$white: #fff !default;
+
+$gray-1: #adb5bd !default;
+$gray-2: #6c757d !default;
+$gray-3: #495057 !default;
+$gray-4: #343a40 !default;
+$gray-5: #212529 !default;
+
+$black: #000 !default;
+
+// blue start
+$blue-1: #cfe2ff !default;
+$blue-2: #6ea8fe !default;
+$blue-3: #0a58ca !default;
+$blue-4: #084298 !default;
+$blue-5: #031633 !default;
+
+// indigo start
+$indigo-1: #c3a1fa !default;
+$indigo-2: #9459f6 !default;
+$indigo-3: #6610f2 !default;
+$indigo-4: #4709ac !default;
+$indigo-5: #290564 !default;
+// purple start
+$purple-1: #c7b5e7 !default;
+$purple-2: #9b7cd4 !default;
+$purple-3: #6f42c1 !default;
+$purple-4: #4e2d89 !default;
+$purple-5: #2d1a50 !default;
+
+// pink start
+$pink-1: #f0b2d1 !default;
+$pink-2: #e373aa !default;
+$pink-3: #d63384 !default;
+$pink-4: #9d205e !default;
+$pink-5: #5d1338 !default;
+
+// red start
+$red-1: #f3b7bd !default;
+$red-2: #e77681 !default;
+$red-3: #df2020 !default;
+$red-4: #a71d2a !default;
+$red-5: #66121a !default;
+
+// orange start
+$orange-1: #fed1ac !default;
+$orange-2: #fea860 !default;
+$orange-3: #fd7e14 !default;
+$orange-4: #c35a02 !default;
+$orange-5: #773701 !default;
+
+// yellow start
+$yellow-1: #ffe7a0 !default;
+$yellow-2: #ffd454 !default;
+$yellow-3: #ffc107 !default;
+$yellow-4: #b98b00 !default;
+$yellow-5: #6d5200 !default;
+
+// green start
+$green-1: #59e0a1 !default;
+$green-2: #25c87c !default;
+$green-3: #198754 !default;
+$green-4: #0d462c !default;
+$green-5: #010604 !default;
+
+// teal start
+$teal-1: #94eed3 !default;
+$teal-2: #52e3b8 !default;
+$teal-3: #20c997 !default;
+$teal-4: #158765 !default;
+$teal-5: #0b4534 !default;
+
+// cyan start
+$cyan-1: #9ceafa !default;
+$cyan-2: #54dbf6 !default;
+$cyan-3: #0dcaf0 !default;
+$cyan-4: #098da7 !default;
+$cyan-5: #05505f !default;
+
+// ========== TRANSPARENT COLORS ==========
+// use sass color function for your requirement . like transparentize($color, $amount);
+$white-ts-1: transparentize($white, 0.25);
+$white-ts-2: transparentize($white, 0.5);
+$white-ts-3: transparentize($white, 0.75);
+
+$gray-ts-1: transparentize($gray-3, 0.25);
+$grey-ts-2: transparentize($gray-3, 0.5);
+$white-ts-3: transparentize($gray-3, 0.75);
+
+$black-ts-1: transparentize($black, 0.25);
+$black-ts-2: transparentize($black, 0.5);
+$black-ts-3: transparentize($black, 0.75);
+
+$blue-ts-1: transparentize($blue-3, 0.25);
+$blue-ts-2: transparentize($blue-3, 0.5);
+$blue-ts-3: transparentize($blue-3, 0.75);
+
+$indigo-ts-1: transparentize($indigo-3, 0.25);
+$indigo-ts-2: transparentize($indigo-3, 0.5);
+$indigo-ts-3: transparentize($indigo-3, 0.75);
+
+$purple-ts-1: transparentize($purple-3, 0.25);
+$purple-ts-2: transparentize($purple-3, 0.5);
+$purple-ts-3: transparentize($purple-3, 0.75);
+
+$pink-ts-1: transparentize($pink-3, 0.25);
+$pink-ts-2: transparentize($pink-3, 0.5);
+$pink-ts-3: transparentize($pink-3, 0.75);
+
+$red-ts-1: transparentize($red-3, 0.25);
+$red-ts-2: transparentize($red-3, 0.5);
+$red-ts-3: transparentize($red-3, 0.75);
+
+$orange-ts-1: transparentize($orange-3, 0.25);
+$orange-ts-2: transparentize($orange-3, 0.5);
+$orange-ts-3: transparentize($orange-3, 0.75);
+
+$yellow-ts-1: transparentize($yellow-3, 0.25);
+$yellow-ts-2: transparentize($yellow-3, 0.5);
+$yellow-ts-3: transparentize($yellow-3, 0.75);
+
+$green-ts-1: transparentize($green-3, 0.25);
+$green-ts-2: transparentize($green-3, 0.5);
+$green-ts-3: transparentize($green-3, 0.75);
+
+$teal-ts-1: transparentize($teal-3, 0.25);
+$teal-ts-2: transparentize($teal-3, 0.5);
+$teal-ts-3: transparentize($teal-3, 0.75);
+
+$cyan-ts-1: transparentize($cyan-3, 0.25);
+$cyan-ts-2: transparentize($cyan-3, 0.5);
+$cyan-ts-3: transparentize($cyan-3, 0.75);
+
+// =========== FONT SIZE ==========
+$text-1: 1rem;
+$text-2: 1.2rem;
+$text-3: 1.4rem;
+$text-4: 1.6rem;
+$text-5: 1.8rem;
+$text-6: 2rem;
+$text-7: 2.2rem;
+$text-8: 2.4rem;
+$text-9: 2.6rem;
+$text-10: 2.8rem;
+$text-10: 3rem;
+
+$text-11: 3.2rem;
+$text-12: 3.4rem;
+$text-13: 3.6rem;
+$text-14: 3.8rem;
+$text-15: 4rem;

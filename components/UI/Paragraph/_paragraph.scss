@@ -1,0 +1,7 @@
+._paragraph {
+	@extend .des__3;
+	a {
+		color: $link-hover-color;
+		text-transform: capitalize;
+	}
+}

@@ -1,0 +1,125 @@
+@import "./helper-variable";
+// ====== WEBSITE COLORS =======
+$color-primary: $blue-5;
+
+$color-secondary: $red-3;
+
+$color-tertiary: $gray-3;
+
+$color-quaternary: $white;
+
+// ====== WEBSITE BG COLORS =======
+
+$bg-primary: $white;
+$bg-secondary: #fde4e4;
+$bg-tertiary: $color-secondary;
+
+$body-bg: $bg-primary;
+$modal-bg: $grey-ts-2;
+
+$body-text-color: $gray-5;
+// LINK COLORS
+$link-color: $color-primary;
+$link-hover-color: $color-secondary;
+// BOX SHADOW
+$bx-sw-color-1: $gray-ts-1;
+
+// ........
+// COLORS USABLE VARIABLE FOR APPLICATION.
+// ........
+
+// ======== FONTS ==========
+$body-font-size: $text-3;
+// SETUP WEBSITE FONT SIZE BY FOLLOWING YOUR UI.
+// for only text or p elements
+$text-x-sm: 0.7rem;
+$text-sm: $text-1;
+$text-md: $text-2;
+$text-lg: $text-3;
+$text-x-lg: $text-4;
+
+$title-x-sm: $text-5;
+$title-sm: $text-7;
+$title-md: $text-9;
+$title-lg: $text-11;
+$title-x-lg: $text-13;
+
+$display-1: $text-15;
+$display-2: 4.5rem;
+$display-3: 5rem;
+$display-4: 5.5rem;
+$display-5: 6rem;
+
+// ========== FONT FAMILY =======
+$ff-primary: "Lato", sans-serif;
+$ff-secondary: "Poppins", sans-serif;
+
+$body-font-family: $ff-primary;
+$font-monospace: monospace, "Courier New", Courier;
+
+// ==== FONT WEIGHT ====
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 500;
+$fw-bolder: 700;
+$fw-bold: 900;
+
+$body-font-weight: $fw-regular;
+
+// ========= LINE HEIGHT =======
+$line-height-1: 1;
+$line-height-2: 1.25;
+$line-height-3: 1.5;
+$line-height-4: 1.75;
+$line-height-5: 2;
+$line-height-6: 2.5;
+
+$body-line-height: $line-height-2;
+// ===== TEXT-SHADOWS ======
+
+$text-shadow-1: 0.2rem 0.2rem 0.2rem $bx-sw-color-1;
+
+// ========== BOX-SHADOWS =============
+
+//bx-sw:X-osa Y-osa blur rgba(boja, opacity);
+// 5px 5px 15px -5px #fde4e4
+$bx-sw-1: 0 0.7rem 1.1rem $black-ts-1;
+$bx-sw-2: 0 1rem 2rem $black-ts-2;
+$bx-sw-3: 0 0.5rem 1rem $black-ts-2;
+$bx-sw-4: 0 3rem 6rem $black-ts-1;
+//  BORDER RADIUS
+$br-round: 5px;
+$br-rounded: 10px;
+$br-circle: 50%;
+
+// ============ TRANSITIONS ============
+
+$transition-1: all 0.5s;
+$transition-2: all 1s ease-in;
+$transition-3: all 1.5s;
+$transition-4: all 2s;
+$transition-5: all 2.5s;
+
+// ================ BREAKPOINTS START ================
+// Extra lg breakpoints
+$bp-lg-1: 2000px;
+$bp-lg-2: 1800px;
+$bp-lg-3: 1600px;
+
+// standard breakpoints
+$bp-1: 1400px;
+$bp-2: 1200px;
+$bp-3: 992px; // column breakpoint for responsive
+$bp-4: 768px; // column breakpoint for responsive
+$bp-5: 576px; // column breakpoint for responsive
+$bp-6: 450px;
+// Extra sm breakpoints
+$bp-sm-1: 380px;
+// BREAKPOINTS END
+// container WIDTH AND HEIGHT variable
+$nav-wrapper-width: 90%;
+// z-index variable .
+$mobile-navigation-z-index: 2;
+$menu-mobile-z-index: 4;
+$header-shrink-z-index: 10;
+$login_modal: 2;

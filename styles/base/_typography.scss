@@ -1,0 +1,46 @@
+%heading {
+	font-family: $ff-primary;
+}
+%paragraph {
+	font-weight: 300;
+}
+.text__1 {
+	font-size: 22px;
+	@extend %paragraph;
+}
+.text__2 {
+	font-size: 20px;
+	@extend %paragraph;
+}
+.text__3 {
+	font-size: 18px;
+	@extend %paragraph;
+}
+.text__4 {
+	font-size: 16px;
+	@extend %paragraph;
+}
+.des__1 {
+	font-size: calc(17px + 0.35vw);
+	@extend %paragraph;
+}
+.des__2 {
+	font-size: calc(16px + 0.3vw);
+	@extend %paragraph;
+}
+.des__3 {
+	font-size: calc(15px + 0.3vw);
+	@extend %paragraph;
+}
+.des__4 {
+	font-size: calc(14px + 0.25vw);
+	@extend %paragraph;
+}
+.des__5 {
+	font-size: calc(13px + 0.25vw);
+	@extend %paragraph;
+}
+.des__6 {
+	font-size: calc(12px + 0.25vw);
+	@extend %paragraph;
+}

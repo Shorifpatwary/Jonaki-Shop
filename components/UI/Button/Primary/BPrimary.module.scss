@@ -1,0 +1,36 @@
+@import "../../../../styles/abstracts/variables";
+.ButtonPrimary {
+	padding: 0.4rem 1rem;
+	border-radius: $br-round;
+	background: $bg-tertiary;
+	color: $color-quaternary;
+	transition: $transition-1;
+	box-sizing: border-box;
+	// border: 1px solid $color-primary;
+	border: none;
+	i {
+		color: inherit;
+		margin: 0;
+	}
+	&:hover {
+		background: $color-primary;
+	}
+}
+
+// .order__btn {
+// 	background: #df2020;
+// 	color: #fff;
+// 	transition: 0.3s;
+// }
+
+// .order__btn:hover {
+// 	background: #212245;
+// }
+// .all__foods-btn {
+// 	background: transparent;
+// 	border: 1px solid #df2020 !important;
+// }
+
+// .all__foods-btn a {
+// 	color: #df2020;
+// }

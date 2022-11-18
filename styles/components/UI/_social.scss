@@ -1,0 +1,44 @@
+.social {
+
+  &__cv {
+    text-decoration: none;
+    background-color: $color-black;
+    color: $color-white;
+    border-radius: 50%;
+    font-size: 1rem;
+    @include grid-center-1;
+    margin: 0 0 .5rem -.2rem;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: .8rem;
+    }
+  } 
+
+  &__top {
+
+    // width: 20rem;
+    // display: flex;
+    // justify-content: space-between;
+
+    @include grid-center-5;
+    grid-template-columns: repeat(5, min-content);
+    justify-content: end;
+    column-gap: 2rem;
+
+  }
+
+  &__top-icon,
+  &__cv {
+    width: 2rem;
+    height: 2rem;
+    @include hover-active;
+
+    @media only screen and (max-width: $bp-6) {
+      margin-top: 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+  }
+
+}

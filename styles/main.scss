@@ -1,0 +1,36 @@
+@import "./abstracts/variables";
+// @import "abstracts/mixins";
+// ===== BASE STYLES ======
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/flex-layout";
+
+// @import "base/utilities";
+
+// @import "components/btn";
+// @import "components/fade";
+// @import "components/form";
+// @import "components/location";
+// @import "components/logo";
+// @import "components/paragraph";
+// @import "components/social";
+
+// LAYOUTS COMPONENTS
+// @import "../components/Layout/Header/header";
+// @import "./components/layout/about";
+// @import "./components/layout/features";
+// @import "../components/Layout/Footer/footer";
+// @import "./components/layout/navigation";
+// @import "./components/layout/pijaca-foto";
+// @import "./components/layout/story";
+// @import "./components/layout/top";
+
+// ===== UI COMPONENTS ======
+// @import "../components/UI/section/section";
+// @import "../components/UI/Heading/all-headings";
+// @import "../components/UI/Paragraph/paragraph";
+// @import "../components/UI/logo/logo";
+
+// ===== PAGES ======
+// @import "../components/pages/Home/home";

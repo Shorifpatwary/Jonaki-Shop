@@ -1,0 +1,402 @@
+// ========= FLEX CLASSES  ==========
+.app__container {
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+}
+.d__flex {
+	display: flex;
+}
+.flex__row {
+	flex-direction: row !important;
+}
+.flex__column {
+	flex-direction: column !important;
+}
+@media only screen and (max-width: $bp-3) {
+	.flex__column-bp-3 {
+		flex-direction: column !important;
+	}
+}
+.flex__start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex__center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// most usable
+.flex__center-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex__center-se {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.flex__center-sa {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.flex__end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+// flex classes for column direction.
+.flex__column-start {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.flex__column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex__column-end {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+// ========= COLUMN CLASSES ==========
+.col__12 {
+	flex-grow: 1;
+	flex-basis: 100%;
+}
+
+.col__11 {
+	flex-grow: 1;
+	flex-basis: 91.66667%;
+}
+
+.col__10 {
+	flex-grow: 1;
+	flex-basis: 83.33333%;
+}
+
+.col__9 {
+	flex-grow: 1;
+	flex-basis: 75%;
+}
+
+.col__8 {
+	flex-grow: 1;
+	flex-basis: 66.66667%;
+}
+
+.col__7 {
+	flex-grow: 1;
+	flex-basis: 58.33333%;
+}
+
+.col__6 {
+	flex-grow: 1;
+	flex-basis: 50%;
+}
+
+.col__5 {
+	flex-grow: 1;
+	flex-basis: 41.66667%;
+}
+
+.col__4 {
+	flex-grow: 1;
+	flex-basis: 33.33333%;
+}
+
+.col__3 {
+	flex-grow: 1;
+	flex-basis: 25%;
+}
+
+.col__2 {
+	flex-grow: 1;
+	flex-basis: 16.66667%;
+}
+
+.col__1 {
+	flex-grow: 1;
+	flex-basis: 8.33333%;
+}
+
+/* use example */
+// @include column-divide-with-breakpoints(); use this mixin to make custom layout classes for your breakpoints .
+// breakpoint 3 = 992px
+@media only screen and (max-width: $bp-3) {
+	.col__bp3-12 {
+		flex-grow: 1;
+		flex-basis: 100%;
+	}
+	.col__bp3-11 {
+		flex-grow: 1;
+		flex-basis: 91.66667%;
+	}
+	.col__bp3-10 {
+		flex-grow: 1;
+		flex-basis: 83.33333%;
+	}
+	.col__bp3-9 {
+		flex-grow: 1;
+		flex-basis: 75%;
+	}
+	.col__bp3-8 {
+		flex-grow: 1;
+		flex-basis: 66.66667%;
+	}
+	.col__bp3-7 {
+		flex-grow: 1;
+		flex-basis: 58.33333%;
+	}
+	.col__bp3-6 {
+		flex-grow: 1;
+		flex-basis: 50%;
+	}
+	.col__bp3-5 {
+		flex-grow: 1;
+		flex-basis: 41.66667%;
+	}
+	.col__bp3-4 {
+		flex-grow: 1;
+		flex-basis: 33.33333%;
+	}
+	.col__bp3-3 {
+		flex-grow: 1;
+		flex-basis: 25%;
+	}
+	.col__bp3-2 {
+		flex-grow: 1;
+		flex-basis: 16.66667%;
+	}
+	.col__bp3-1 {
+		flex-grow: 1;
+		flex-basis: 8.33333%;
+	}
+}
+// breakpoint 4 = 768px
+@media only screen and (max-width: $bp-4) {
+	.col__bp4-12 {
+		flex-grow: 1;
+		flex-basis: 100%;
+	}
+	.col__bp4-11 {
+		flex-grow: 1;
+		flex-basis: 91.66667%;
+	}
+	.col__bp4-10 {
+		flex-grow: 1;
+		flex-basis: 83.33333%;
+	}
+	.col__bp4-9 {
+		flex-grow: 1;
+		flex-basis: 75%;
+	}
+	.col__bp4-8 {
+		flex-grow: 1;
+		flex-basis: 66.66667%;
+	}
+	.col__bp4-7 {
+		flex-grow: 1;
+		flex-basis: 58.33333%;
+	}
+	.col__bp4-6 {
+		flex-grow: 1;
+		flex-basis: 50%;
+	}
+	.col__bp4-5 {
+		flex-grow: 1;
+		flex-basis: 41.66667%;
+	}
+	.col__bp4-4 {
+		flex-grow: 1;
+		flex-basis: 33.33333%;
+	}
+	.col__bp4-3 {
+		flex-grow: 1;
+		flex-basis: 25%;
+	}
+	.col__bp4-2 {
+		flex-grow: 1;
+		flex-basis: 16.66667%;
+	}
+	.col__bp4-1 {
+		flex-grow: 1;
+		flex-basis: 8.33333%;
+	}
+}
+// breakpoint 5 = 576px
+@media only screen and (max-width: $bp-5) {
+	.col__bp5-12 {
+		flex-grow: 1;
+		flex-basis: 100%;
+	}
+	.col__bp5-11 {
+		flex-grow: 1;
+		flex-basis: 91.66667%;
+	}
+	.col__bp5-10 {
+		flex-grow: 1;
+		flex-basis: 83.33333%;
+	}
+	.col__bp5-9 {
+		flex-grow: 1;
+		flex-basis: 75%;
+	}
+	.col__bp5-8 {
+		flex-grow: 1;
+		flex-basis: 66.66667%;
+	}
+	.col__bp5-7 {
+		flex-grow: 1;
+		flex-basis: 58.33333%;
+	}
+	.col__bp5-6 {
+		flex-grow: 1;
+		flex-basis: 50%;
+	}
+	.col__bp5-5 {
+		flex-grow: 1;
+		flex-basis: 41.66667%;
+	}
+	.col__bp5-4 {
+		flex-grow: 1;
+		flex-basis: 33.33333%;
+	}
+	.col__bp5-3 {
+		flex-grow: 1;
+		flex-basis: 25%;
+	}
+	.col__bp5-2 {
+		flex-grow: 1;
+		flex-basis: 16.66667%;
+	}
+	.col__bp5-1 {
+		flex-grow: 1;
+		flex-basis: 8.33333%;
+	}
+}
+
+// flex grow
+.grow {
+	flex-grow: 1 !important;
+}
+.grow-none {
+	flex-grow: 0 !important;
+}
+// flex shrink
+.shrink {
+	flex-shrink: 1 !important ;
+}
+.shrink__none {
+	flex-shrink: 0 !important ;
+}
+// flex wrap
+.wrap {
+	flex-wrap: wrap !important;
+}
+.no__wrap {
+	flex-wrap: nowrap !important;
+}
+.wrap__reverse {
+	flex-wrap: wrap-reverse !important;
+}
+// ===== GAP CLASSES IN FLEX BOXES =======
+.gap__1 {
+	gap: 0.5rem;
+}
+
+.gap__2 {
+	gap: 1rem;
+}
+
+.gap__3 {
+	gap: 1.5rem;
+}
+
+.gap__4 {
+	gap: 2rem;
+}
+
+.gap__5 {
+	gap: 2.5rem;
+}
+
+.gap__6 {
+	gap: 3rem;
+}
+
+.gap__7 {
+	gap: 3.5rem;
+}
+
+.gap__8 {
+	gap: 4rem;
+}
+
+.gap__9 {
+	gap: 4.5rem;
+}
+
+.gap__10 {
+	gap: 5rem;
+}
+// ==== WIDTH CSS CLASS ===== layout manager
+.w__1 {
+	width: 10%;
+}
+.w__2 {
+	width: 20%;
+}
+.w__3 {
+	width: 30%;
+}
+.w__4 {
+	width: 40%;
+}
+.w__5 {
+	width: 50%;
+}
+.w__6 {
+	width: 60%;
+}
+.w__7 {
+	width: 70%;
+}
+.w__8 {
+	width: 80%;
+}
+.w__9 {
+	width: 90%;
+}
+.w__10 {
+	width: 100%;
+}
+// margin classes
+.m__auto {
+	margin: auto !important;
+}
+.mr__auto {
+	margin-right: auto !important;
+}
+.ml__auto {
+	margin-left: auto !important;
+}
+.mt__auto {
+	margin-top: auto !important;
+}
+.mb__auto {
+	margin-bottom: auto !important;
+}
