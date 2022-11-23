@@ -1,0 +1,33 @@
+.SearchBox {
+	// somethng here
+	background: #f9f9f9;
+	/* C1/D */
+
+	border: 1px solid #d1d1d1;
+	border-radius: 12px;
+	padding: 1rem 2rem;
+
+	position: relative;
+	.search__box-group {
+	}
+	input,
+	button,
+	select {
+		border: none;
+		background: transparent;
+		outline: none;
+		font-size: 1rem;
+	}
+	// category box css
+	select {
+		// A reset of styles, including removing the default dropdown arrow
+		// appearance: none;
+		// Additional resets for further consistency
+		background-color: transparent;
+		border: none;
+		padding: 0 1em 0 0;
+		margin: 0;
+		width: 100%;
+		font-weight: 700;
+	}
+}

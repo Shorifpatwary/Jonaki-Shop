@@ -1,22 +1,24 @@
 import React from "react";
-import Style from "@/UiComponent/section/section.module.scss";
-const Section = (props) => {
+import style from "@/UiComponent/section/section.module.scss";
+const Section = ({
+	name = "",
+	className = "",
+	rowClassName = "",
+	children = "",
+	TagName = "section",
+}) => {
 	return (
-		<div
-			id={props?.name || ""}
-			className={`${Style.section__wrapper} flex__center ${
-				props?.className || ""
-			}`}
+		<TagName
+			id={name}
+			className={`${style.section__wrapper} flex__center ${className}`}
 		>
 			<div
-				className={`${Style.section__row}  flex__column-center ${
-					props?.rowClassName || ""
-				}`}
+				className={`${style.section__row}  flex__column-center ${rowClassName} gap__6`}
 			>
-				{props?.children || ""}
+				{children}
 			</div>
 			{/*  */}
-		</div>
+		</TagName>
 	);
 };
 

@@ -22,7 +22,9 @@
 			"@/UiComponent/*": ["components/UI/*"],
 			"@/Tags/*": ["components/UI/Tags/*"],
 			"@/public/*": ["public/*"],
+			"@/tools/*": ["tools/*"],
 			"@/images/*": ["public/images/*"],
+			"@/icons/*": ["public/icons/*"],
 			"@/styles/*": ["styles/*"]
 		}
 	},
@@ -30,7 +32,9 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"components/UI/Button/indexs.jsx"
+		"components/UI/Button/indexs.jsx",
+		"pages/index.jsx",
+		"components/UI/Tags/Button/index.jsx"
 	],
 	"exclude": ["node_modules"]
 }

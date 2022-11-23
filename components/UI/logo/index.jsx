@@ -1,15 +1,22 @@
 import React from "react";
-
-const Logo = (props) => {
+import style from "@/UiComponent/Logo/logo.module.scss";
+import Image from "next/image";
+import logo from "@/public/logo.png";
+import Link from "next/link";
+const Logo = ({ name = "logo", className = "", ...props }) => {
 	return (
-		<div>
-			<img
-				id={props?.name || "logo"}
-				className={`_logo ${props?.className || ""}`}
+		<Link href="/" className="flex__center ">
+			<Image
+				id={name}
+				className={`${style.logo__main} ${className}`}
 				{...props}
-				alt="logo"
+				alt="Jonaki online shop"
+				src={logo}
+				width={280}
+				height={20}
+				quality={100}
 			/>
-		</div>
+		</Link>
 	);
 };
 

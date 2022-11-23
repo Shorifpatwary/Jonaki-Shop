@@ -1,0 +1,166 @@
+{
+	"header": {
+		"header_top": {
+			"header_info": [
+				{ "text": "Chat with us", "url": "/contact" },
+				{ "text": "+420 336 775 664", "url": "/contact" },
+				{ "text": "info@freshnesecom.com", "url": "/contact" }
+			],
+			"header_links": [
+				{ "text": "Blog", "url": "/blog" },
+				{ "text": "About Us", "url": "/about" },
+				{ "text": "Careers", "url": "/careers" }
+			]
+		},
+		"pages": [
+			{ "text": "Home", "url": "/" },
+			{
+				"text": "Shop",
+				"url": "/products",
+				"submenu": [
+					{
+						"text": "web design",
+						"url": "web-design"
+					},
+					{
+						"text": "web development",
+						"url": "web-dev"
+					},
+					{
+						"text": "SEO",
+						"url": "seo",
+						"submenu": [
+							{
+								"text": "web design",
+								"url": "web-design"
+							},
+							{
+								"text": "web development",
+								"url": "web-dev"
+							}
+						]
+					}
+				]
+			},
+			{ "text": "Features", "url": "/category" },
+			{
+				"text": "blog",
+				"url": "/blog",
+				"submenu": [
+					{
+						"text": "web design",
+						"url": "web-design"
+					},
+					{
+						"text": "web development",
+						"url": "web-dev"
+					},
+					{
+						"text": "SEO",
+						"url": "seo",
+						"submenu": [
+							{
+								"text": "web design",
+								"url": "web-design"
+							},
+							{
+								"text": "web development",
+								"url": "web-dev"
+							}
+						]
+					}
+				]
+			},
+			{ "text": "contact", "url": "/contact" },
+			{ "text": "about", "url": "/about" },
+			{ "text": "FAQ", "url": "/faq" }
+		]
+	},
+	"testimonial": {
+		"text": "Copyright © 2020 petrbilek.com",
+		"testimonials": [
+			{
+				"text": "“1 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "1 Name and Surname"
+			},
+			{
+				"text": "“2 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "2 Name and Surname"
+			},
+			{
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "3 Name and Surname"
+			},
+			{
+				"text": "“4 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "4 Name and Surname"
+			},
+			{
+				"text": "“5 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "5 Name and Surname"
+			}
+		]
+	},
+	"footer": {
+		"text": "Copyright © 2020 petrbilek.com",
+		"link": [
+			{
+				"title": "Get in touch",
+				"links": [
+					{ "text": "About Us", "url": "/about" },
+					{ "text": "Careers", "url": "/careers" },
+					{ "text": "Press Releases", "url": "/products" },
+					{ "text": "Blog", "url": "/blog" }
+				]
+			},
+			{
+				"title": "Connections",
+				"links": [
+					{ "text": "Facebook", "url": "https://www.facebook.com/" },
+					{ "text": "Twitter", "url": "https://www.twitter.com/" },
+					{ "text": "Instagram", "url": "https://www.instagram.com/" },
+					{ "text": "Youtube", "url": "https://www.youtube.com/" },
+					{ "text": "LinkedIn", "url": "https://www.linkdin.com/" }
+				]
+			},
+			{
+				"title": "Earnings",
+				"links": [
+					{ "text": "Become an Affiliate", "url": "/about" },
+					{ "text": "Advertise your product", "url": "/careers" },
+					{ "text": "Sell on Market", "url": "/products" }
+				]
+			},
+			{
+				"title": "Account",
+				"links": [
+					{ "text": "Your account", "url": "/about" },
+					{ "text": "100 % purchase protection", "url": "/careers" },
+					{ "text": "Chat with us", "url": "/contact" },
+					{ "text": "Help", "url": "/products" }
+				]
+			}
+		],
+		"product_tags": {
+			"text": "Product tags",
+			"tags": [
+				"Beans ",
+				"Carrots",
+				"Apples",
+				"Garlic",
+				"Mushrooms",
+				"Tomatoes",
+				"Chilli peppers",
+				"Broccoli",
+				"Watermelons",
+				"Cherries",
+				"Meat",
+				"Seo tag",
+				"Fish",
+				"Seo tag 2 ",
+				"Fresh food",
+				"Lemons"
+			]
+		}
+	}
+}

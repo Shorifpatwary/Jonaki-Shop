@@ -1,0 +1,9 @@
+@import "../../../../../styles/abstracts/variables";
+.P {
+	font-size: 12px;
+	// font-weight : 400; inherited
+	// font family : $ff-secondary;  inherited
+	line-height: 1rem; // 16px with responsive
+	color: $tx-color-secondary;
+	// margin-bottom: 0.8rem ; inherited
+}

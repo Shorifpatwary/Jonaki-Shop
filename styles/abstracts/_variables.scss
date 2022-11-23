@@ -16,6 +16,8 @@ $tx-color-tertiary: $color-primary;
 
 // ====== WEBSITE BG COLORS =======
 
+$pill-primary: #f5f5f5;
+
 $bg-primary: #ffffff;
 $bg-secondary: #f9f9f9;
 // $bg-tertiary: $color-secondary;
@@ -99,7 +101,7 @@ $br-1: 1px solid #d1d1d1;
 $btn-border-1: 2px solid darken($color-primary, 14%);
 
 $br-round: 5px;
-$br-rounded: 10px;
+$br-rounded: 12px; // for only jonaki
 $br-circle: 50%;
 
 // ============ TRANSITIONS ============

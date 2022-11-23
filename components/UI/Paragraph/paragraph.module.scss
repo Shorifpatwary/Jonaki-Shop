@@ -1,7 +1,7 @@
+@import "../../../styles/abstracts/variables";
 .paragraph {
-	@extend .des__3;
 	a {
-		color: $link-hover-color;
+		color: black;
 		text-transform: capitalize;
 	}
 }

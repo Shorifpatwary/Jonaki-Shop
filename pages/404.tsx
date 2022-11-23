@@ -1,5 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 // import Footer from "../components/Footer";
 const PageNotFound = () => {
 	const router = useRouter();
@@ -24,6 +26,7 @@ PageNotFound.getLayout = (page) => {
 		<>
 			{page}
 			<h2>Add Footer only </h2>
+			<Link href="/"> Go Back </Link>
 			{/* <Footer /> */}
 		</>
 	);

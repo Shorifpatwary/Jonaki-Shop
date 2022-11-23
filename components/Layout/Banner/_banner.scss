@@ -1,0 +1,31 @@
+.banner__wrapper {
+	padding: 1rem;
+	border-radius: $br-round;
+	height: 390px;
+	position: relative; // for image
+	color: white;
+	background: #97959531;
+	.banner__row {
+		// min-height: 300px;
+		height: 100%;
+	}
+	img {
+	}
+	h6 {
+		margin-bottom: 5px;
+		color: $color-primary;
+	}
+	// h1,
+	// h2,
+	// h3,
+	// h4,
+	// h5,
+	// h6,
+	// button,
+	// p {
+	// 	color: white;
+	// }
+	.title {
+		margin: 0.5rem 0px;
+	}
+}

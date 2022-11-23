@@ -1,0 +1,15 @@
+@import "../../../styles/abstracts/variables";
+.product__wrapper {
+	min-height: 240px;
+	min-width: 70px;
+	.product__image {
+	}
+	.product__info {
+		color: black;
+		.product__text {
+			color: $tx-color-primary;
+			.product__title {
+			}
+		}
+	}
+}

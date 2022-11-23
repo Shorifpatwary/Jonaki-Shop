@@ -1,0 +1,12 @@
+@import "../../../../styles/abstracts/variables";
+.pill_primary {
+	background: $pill-primary;
+	color: $tx-color-primary;
+	border-radius: $br-rounded;
+	text-align: center;
+	padding: 6px;
+	white-space: nowrap;
+	// &:hover {
+	// 	color: $color-primary;
+	// }
+}

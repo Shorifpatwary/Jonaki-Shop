@@ -17,20 +17,23 @@
 // @import "components/social";
 
 // LAYOUTS COMPONENTS
-// @import "../components/Layout/Header/header";
+@import "../components/Layout/Mega-Header/header";
 // @import "./components/layout/about";
 // @import "./components/layout/features";
-// @import "../components/Layout/Footer/footer";
+@import "../components/Layout/Footer/footer";
 // @import "./components/layout/navigation";
 // @import "./components/layout/pijaca-foto";
 // @import "./components/layout/story";
 // @import "./components/layout/top";
+@import "../components/Layout/CategoriesBlock/categoriesBlock";
+@import "../components/Layout/Banner/banner";
 
 // ===== UI COMPONENTS ======
 // @import "../components/UI/section/section";
 // @import "../components/UI/Heading/all-headings";
 // @import "../components/UI/Paragraph/paragraph";
 // @import "../components/UI/logo/logo";
+@import "../components/UI/NestedMenu/NestedMenu";
 
 // ===== PAGES ======
-// @import "../components/pages/Home/home";
+@import "../styles/components/pages/home";
