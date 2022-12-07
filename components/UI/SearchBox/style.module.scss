@@ -1,33 +1,82 @@
+@import "../../../styles/abstracts/variables";
 .SearchBox {
-	// somethng here
 	background: #f9f9f9;
+
 	/* C1/D */
-
-	border: 1px solid #d1d1d1;
+	border: 1px solid $tx-color-secondary;
 	border-radius: 12px;
-	padding: 1rem 2rem;
-
+	padding: 0.7rem 1rem;
 	position: relative;
-	.search__box-group {
-	}
+	// .search__box-group {
+	// }
 	input,
-	button,
-	select {
+	button {
 		border: none;
 		background: transparent;
 		outline: none;
 		font-size: 1rem;
 	}
 	// category box css
-	select {
-		// A reset of styles, including removing the default dropdown arrow
-		// appearance: none;
-		// Additional resets for further consistency
-		background-color: transparent;
-		border: none;
-		padding: 0 1em 0 0;
-		margin: 0;
-		width: 100%;
-		font-weight: 700;
+	.select {
+		position: relative;
+		font-size: 0.8rem;
+		color: $tx-color-primary;
+		text-align: left;
+		cursor: pointer;
+
+		.selected__text {
+			font-weight: $fw-bolder;
+		}
+		img,
+		svg {
+			// position: absolute;
+			// right: -3.5rem;
+			// top: 6px;
+			width: 20px;
+			margin: auto 0px;
+		}
+		.dropdown {
+			position: absolute;
+			top: 2.4rem; // use rem unit and avoid @media ..
+			left: -1rem;
+
+			padding: 1rem;
+			box-shadow: $bx-sw-1;
+			z-index: $category-dropdown-z-index;
+			background-color: $bg-primary;
+			border-radius: $br-rounded;
+			li {
+				padding: 0.3rem 0;
+				border-radius: $br-round;
+				transition: $transition-1;
+				&:hover {
+					background: darken($bg-primary, 10);
+					transform: translateX(3px);
+				}
+			}
+		}
+	}
+
+	// search input
+	.search {
+		color: $tx-color-primary;
+		padding: 0rem 0.4rem;
+		border-left: 1px solid $tx-color-secondary;
+		input {
+			color: $tx-color-primary;
+			&::placeholder {
+				font-size: 0.8rem;
+			}
+		}
+	}
+	// search button
+	.searchIcon {
+		img,
+		svg {
+			width: 1rem;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 }

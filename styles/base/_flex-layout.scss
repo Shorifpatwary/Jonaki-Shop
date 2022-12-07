@@ -1,3 +1,4 @@
+@import "../abstracts/variables";
 // ========= FLEX CLASSES  ==========
 .app__container {
 	width: 100%;
@@ -9,6 +10,14 @@
 }
 .flex__row {
 	flex-direction: row !important;
+}
+// flex row or section row
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 .flex__column {
 	flex-direction: column !important;
@@ -73,239 +82,195 @@
 }
 
 // ========= COLUMN CLASSES ==========
-.col__12 {
-	flex-grow: 1;
-	flex-basis: 100%;
-}
-
-.col__11 {
-	flex-grow: 1;
-	flex-basis: 91.66667%;
-}
-
 .col__10 {
-	flex-grow: 1;
-	flex-basis: 83.33333%;
+	flex: 1 1 100%;
 }
-
 .col__9 {
-	flex-grow: 1;
-	flex-basis: 75%;
+	flex: 1 1 90%;
 }
-
 .col__8 {
-	flex-grow: 1;
-	flex-basis: 66.66667%;
+	flex: 1 1 80%;
 }
-
 .col__7 {
-	flex-grow: 1;
-	flex-basis: 58.33333%;
+	flex: 1 1 70%;
 }
-
 .col__6 {
-	flex-grow: 1;
-	flex-basis: 50%;
+	flex: 1 1 60%;
 }
-
 .col__5 {
-	flex-grow: 1;
-	flex-basis: 41.66667%;
+	flex: 1 1 50%;
 }
-
 .col__4 {
-	flex-grow: 1;
-	flex-basis: 33.33333%;
+	flex: 1 1 40%;
 }
-
 .col__3 {
-	flex-grow: 1;
-	flex-basis: 25%;
+	flex: 1 1 30%;
 }
-
 .col__2 {
-	flex-grow: 1;
-	flex-basis: 16.66667%;
+	flex: 1 1 20%;
 }
-
 .col__1 {
-	flex-grow: 1;
-	flex-basis: 8.33333%;
+	flex: 1 1 10%;
 }
 
-/* use example */
 // @include column-divide-with-breakpoints(); use this mixin to make custom layout classes for your breakpoints .
 // breakpoint 3 = 992px
+
 @media only screen and (max-width: $bp-3) {
-	.col__bp3-12 {
-		flex-grow: 1;
-		flex-basis: 100%;
-	}
-	.col__bp3-11 {
-		flex-grow: 1;
-		flex-basis: 91.66667%;
-	}
 	.col__bp3-10 {
-		flex-grow: 1;
-		flex-basis: 83.33333%;
+		flex: 1 1 100%;
 	}
 	.col__bp3-9 {
-		flex-grow: 1;
-		flex-basis: 75%;
+		flex: 1 1 90%;
 	}
 	.col__bp3-8 {
-		flex-grow: 1;
-		flex-basis: 66.66667%;
+		flex: 1 1 80%;
 	}
 	.col__bp3-7 {
-		flex-grow: 1;
-		flex-basis: 58.33333%;
+		flex: 1 1 70%;
 	}
 	.col__bp3-6 {
-		flex-grow: 1;
-		flex-basis: 50%;
+		flex: 1 1 60%;
 	}
 	.col__bp3-5 {
-		flex-grow: 1;
-		flex-basis: 41.66667%;
+		flex: 1 1 50%;
 	}
 	.col__bp3-4 {
-		flex-grow: 1;
-		flex-basis: 33.33333%;
+		flex: 1 1 40%;
 	}
 	.col__bp3-3 {
-		flex-grow: 1;
-		flex-basis: 25%;
+		flex: 1 1 30%;
 	}
 	.col__bp3-2 {
-		flex-grow: 1;
-		flex-basis: 16.66667%;
+		flex: 1 1 20%;
 	}
 	.col__bp3-1 {
-		flex-grow: 1;
-		flex-basis: 8.33333%;
+		flex: 1 1 10%;
 	}
 }
 // breakpoint 4 = 768px
 @media only screen and (max-width: $bp-4) {
-	.col__bp4-12 {
-		flex-grow: 1;
-		flex-basis: 100%;
-	}
-	.col__bp4-11 {
-		flex-grow: 1;
-		flex-basis: 91.66667%;
-	}
 	.col__bp4-10 {
-		flex-grow: 1;
-		flex-basis: 83.33333%;
+		flex: 1 1 100%;
 	}
 	.col__bp4-9 {
-		flex-grow: 1;
-		flex-basis: 75%;
+		flex: 1 1 90%;
 	}
 	.col__bp4-8 {
-		flex-grow: 1;
-		flex-basis: 66.66667%;
+		flex: 1 1 80%;
 	}
 	.col__bp4-7 {
-		flex-grow: 1;
-		flex-basis: 58.33333%;
+		flex: 1 1 70%;
 	}
 	.col__bp4-6 {
-		flex-grow: 1;
-		flex-basis: 50%;
+		flex: 1 1 60%;
 	}
 	.col__bp4-5 {
-		flex-grow: 1;
-		flex-basis: 41.66667%;
+		flex: 1 1 50%;
 	}
 	.col__bp4-4 {
-		flex-grow: 1;
-		flex-basis: 33.33333%;
+		flex: 1 1 40%;
 	}
 	.col__bp4-3 {
-		flex-grow: 1;
-		flex-basis: 25%;
+		flex: 1 1 30%;
 	}
 	.col__bp4-2 {
-		flex-grow: 1;
-		flex-basis: 16.66667%;
+		flex: 1 1 20%;
 	}
 	.col__bp4-1 {
-		flex-grow: 1;
-		flex-basis: 8.33333%;
+		flex: 1 1 10%;
 	}
 }
 // breakpoint 5 = 576px
 @media only screen and (max-width: $bp-5) {
-	.col__bp5-12 {
-		flex-grow: 1;
-		flex-basis: 100%;
-	}
-	.col__bp5-11 {
-		flex-grow: 1;
-		flex-basis: 91.66667%;
-	}
 	.col__bp5-10 {
-		flex-grow: 1;
-		flex-basis: 83.33333%;
+		flex: 1 1 100%;
 	}
 	.col__bp5-9 {
-		flex-grow: 1;
-		flex-basis: 75%;
+		flex: 1 1 90%;
 	}
 	.col__bp5-8 {
-		flex-grow: 1;
-		flex-basis: 66.66667%;
+		flex: 1 1 80%;
 	}
 	.col__bp5-7 {
-		flex-grow: 1;
-		flex-basis: 58.33333%;
+		flex: 1 1 70%;
 	}
 	.col__bp5-6 {
-		flex-grow: 1;
-		flex-basis: 50%;
+		flex: 1 1 60%;
 	}
 	.col__bp5-5 {
-		flex-grow: 1;
-		flex-basis: 41.66667%;
+		flex: 1 1 50%;
 	}
 	.col__bp5-4 {
-		flex-grow: 1;
-		flex-basis: 33.33333%;
+		flex: 1 1 40%;
 	}
 	.col__bp5-3 {
-		flex-grow: 1;
-		flex-basis: 25%;
+		flex: 1 1 30%;
 	}
 	.col__bp5-2 {
-		flex-grow: 1;
-		flex-basis: 16.66667%;
+		flex: 1 1 20%;
 	}
 	.col__bp5-1 {
-		flex-grow: 1;
-		flex-basis: 8.33333%;
+		flex: 1 1 10%;
 	}
 }
 
+// using bpCol-3 and bpCol-3 related class in this file. Because those classes are pretty useful.
+.bpCol__3 {
+	flex: 1 1 25%;
+}
+@media only screen and (max-width: 992) {
+	.bpCol__bp3-3 {
+		flex: 1 1 25%;
+	}
+}
+@media only screen and (max-width: 576) {
+	.bpCol__bp5-3 {
+		flex: 1 1 25%;
+	}
+}
+// bpCol 9
+.bpCol__9 {
+	flex: 1 1 75%;
+}
+@media only screen and (max-width: 992) {
+	.bpCol__bp3-9 {
+		flex: 1 1 75%;
+	}
+}
+@media only screen and (max-width: 576) {
+	.bpCol__bp5-9 {
+		flex: 1 1 75%;
+	}
+}
 // flex grow
 .grow {
 	flex-grow: 1 !important;
 }
-.grow-none {
+.no__grow {
 	flex-grow: 0 !important;
 }
 // flex shrink
 .shrink {
 	flex-shrink: 1 !important ;
 }
-.shrink__none {
+.no__shrink {
 	flex-shrink: 0 !important ;
 }
-// flex wrap
+// ========== FLEX WRAP
 .wrap {
 	flex-wrap: wrap !important;
+}
+// flex wrap with different breakpoints
+@media only screen and (max-width: $bp-3) {
+	.wrap__bp3 {
+		flex-wrap: wrap !important;
+	}
+}
+@media only screen and (max-width: $bp-4) {
+	.wrap__bp4 {
+		flex-wrap: wrap !important;
+	}
 }
 .no__wrap {
 	flex-wrap: nowrap !important;

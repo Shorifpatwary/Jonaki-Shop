@@ -13,17 +13,15 @@ const Footer = () => {
 	const tag_title = footer.product_tags.text;
 	const tags = footer.product_tags.tags;
 	return (
-		<Section TagName="footer" className="footer__wrapper">
-			<Div className="footer__top footer__links flex__start w__10 gap__2 col__bp-4-6 col__bp-5-12 wrap">
-				{footer.link.map((block) => {
-					return (
-						<FooterLinkBlock
-							key={block.title + block.links + Id++}
-							title={block.title}
-							links={block.links}
-						/>
-					);
-				})}
+		<Section TagName="footer" className="footer__wrapper ">
+			<Div className="footer__top footer__links row gap__2 ">
+				{footer.link.map((block) => (
+					<FooterLinkBlock
+						key={block.title + block.links + Id++}
+						title={block.title}
+						links={block.links}
+					/>
+				))}
 			</Div>
 			{/* Footer tag  */}
 			<Div className="footer__tag flex__column-start w__10 gap__2">

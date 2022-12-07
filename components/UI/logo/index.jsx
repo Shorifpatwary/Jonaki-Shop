@@ -5,7 +5,7 @@ import logo from "@/public/logo.png";
 import Link from "next/link";
 const Logo = ({ name = "logo", className = "", ...props }) => {
 	return (
-		<Link href="/" className="flex__center ">
+		<Link href="/" className={` flex__start ${style.logo__main} ${className}`}>
 			<Image
 				id={name}
 				className={`${style.logo__main} ${className}`}

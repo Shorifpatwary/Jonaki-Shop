@@ -40,24 +40,6 @@ $bx-sw-color-1: $gray-ts-1;
 // ======== FONTS ==========
 $body-font-size: $text-3;
 // SETUP WEBSITE FONT SIZE BY FOLLOWING YOUR UI.
-// for only text or p elements
-// $text-x-sm: 0.7rem;
-// $text-sm: $text-1;
-// $text-md: $text-2;
-// $text-lg: $text-3;
-// $text-x-lg: $text-4;
-
-// $title-x-sm: $text-5;
-// $title-sm: $text-7;
-// $title-md: $text-9;
-// $title-lg: $text-11;
-// $title-x-lg: $text-13;
-
-// $display-1: $text-15;
-// $display-2: 4.5rem;
-// $display-3: 5rem;
-// $display-4: 5.5rem;
-// $display-5: 6rem;
 
 // ========== FONT FAMILY =======
 $ff-primary: "Poppins", "Lato", sans-serif;
@@ -98,6 +80,7 @@ $bx-sw-3: 0 0.5rem 1rem $black-ts-2;
 $bx-sw-4: 0 3rem 6rem $black-ts-1;
 //  BORDER RADIUS
 $br-1: 1px solid #d1d1d1;
+$br-2: 1px solid #f1f1f1;
 $btn-border-1: 2px solid darken($color-primary, 14%);
 
 $br-round: 5px;
@@ -131,7 +114,9 @@ $bp-sm-1: 380px;
 // container WIDTH AND HEIGHT variable
 $nav-wrapper-width: 90%;
 // z-index variable .
+$category-dropdown-z-index: 100; // fully top
+$testimonial-card-z-index: 2;
 $mobile-navigation-z-index: 2;
-$menu-mobile-z-index: 4;
+$mobile-menu-z-index: 2;
 $header-shrink-z-index: 10;
 $login_modal: 2;

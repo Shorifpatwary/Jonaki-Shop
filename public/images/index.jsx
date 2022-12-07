@@ -14,3 +14,5 @@ export { default as searchIcon } from "@/icons/searchIcon.svg";
 export { default as categoryBurgerIcon } from "@/icons/category-burger.svg";
 export { default as bottomArrow } from "@/icons/bottomArrow.svg";
 export { default as RightArrow } from "@/icons/right-arrow.svg";
+export { default as selectArrow } from "@/icons/select-arrow.svg";
+export { default as mobileMenu } from "@/icons/mobile-menu-icon.svg";

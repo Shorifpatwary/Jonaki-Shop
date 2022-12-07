@@ -1,0 +1,22 @@
+@import "../../../../styles/abstracts/variables";
+.testimonial__card {
+	text-align: center !important;
+	padding: 1.6rem 2rem;
+
+	// copy
+	background: $bg-primary;
+	border: $br-2;
+	border-radius: 12px;
+	color: $tx-color-primary;
+	z-index: $testimonial-card-z-index;
+	min-height: 230px;
+	position: relative;
+
+	img {
+		width: 48px;
+		height: 48px;
+		border-radius: $br-circle;
+		position: absolute;
+		bottom: -22px;
+	}
+}

@@ -1,14 +1,28 @@
 @import "../../../styles/abstracts/variables";
 .product__wrapper {
+	max-width: 400px;
+	min-width: 200px;
 	min-height: 240px;
-	min-width: 70px;
+	padding: 1rem;
+	border-radius: $br-round;
+
+	border: $br-1;
 	.product__image {
+		background: $bg-secondary;
+		width: 100%;
+		border-radius: $br-round;
 	}
+
 	.product__info {
 		color: black;
 		.product__text {
 			color: $tx-color-primary;
 			.product__title {
+			}
+			.product__excerpt {
+				p {
+					margin: 0 !important;
+				}
 			}
 		}
 	}

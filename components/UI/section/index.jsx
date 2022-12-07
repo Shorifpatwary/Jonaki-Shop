@@ -1,5 +1,14 @@
 import React from "react";
 import style from "@/UiComponent/section/section.module.scss";
+/**
+ *
+ * @param {*} name any string
+ * @param {*} className
+ * @param {*} rowClassName
+ * @param {*} children jsx elements
+ * @param {*} TagName default section,
+ * @returns
+ */
 const Section = ({
 	name = "",
 	className = "",

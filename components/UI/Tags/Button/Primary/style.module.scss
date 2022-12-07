@@ -1,12 +1,9 @@
 @import "../../../../../styles/abstracts/variables";
 .Btn__primary {
-	// font-weight: 700;
-	// font-size: 15px;
 	background: $color-primary;
 	color: $white;
 	border: $btn-border-1;
 	font-weight: $fw-bolder;
-	// font-size: 15px;
 	font-size: 1rem;
 	&:hover {
 		background: darken($color-primary, 5%);

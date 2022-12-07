@@ -14,95 +14,51 @@
 		},
 		"pages": [
 			{ "text": "Home", "url": "/" },
-			{
-				"text": "Shop",
-				"url": "/products",
-				"submenu": [
-					{
-						"text": "web design",
-						"url": "web-design"
-					},
-					{
-						"text": "web development",
-						"url": "web-dev"
-					},
-					{
-						"text": "SEO",
-						"url": "seo",
-						"submenu": [
-							{
-								"text": "web design",
-								"url": "web-design"
-							},
-							{
-								"text": "web development",
-								"url": "web-dev"
-							}
-						]
-					}
-				]
-			},
+			{ "text": "Shop", "url": "/products" },
 			{ "text": "Features", "url": "/category" },
-			{
-				"text": "blog",
-				"url": "/blog",
-				"submenu": [
-					{
-						"text": "web design",
-						"url": "web-design"
-					},
-					{
-						"text": "web development",
-						"url": "web-dev"
-					},
-					{
-						"text": "SEO",
-						"url": "seo",
-						"submenu": [
-							{
-								"text": "web design",
-								"url": "web-design"
-							},
-							{
-								"text": "web development",
-								"url": "web-dev"
-							}
-						]
-					}
-				]
-			},
+			{ "text": "blog", "url": "/blog" },
 			{ "text": "contact", "url": "/contact" },
 			{ "text": "about", "url": "/about" },
 			{ "text": "FAQ", "url": "/faq" }
 		]
 	},
 	"testimonial": {
-		"text": "Copyright © 2020 petrbilek.com",
+		"title": "Our customers says",
 		"testimonials": [
 			{
-				"text": "“1 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
-				"name": "1 Name and Surname"
-			},
-			{
-				"text": "“2 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
-				"name": "2 Name and Surname"
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "Name and Surname",
+				"imageUrl": "/images/testimonials/Name-and-Surname.jpg"
 			},
 			{
 				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
-				"name": "3 Name and Surname"
+				"name": "James khan",
+				"imageUrl": "/images/testimonials/James-khan.jpg"
 			},
 			{
-				"text": "“4 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
-				"name": "4 Name and Surname"
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "Robert Surname",
+				"imageUrl": "/images/testimonials/Robert-Surname.jpg"
 			},
 			{
-				"text": "“5 This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
-				"name": "5 Name and Surname"
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "Mary Jessica",
+				"imageUrl": "/images/testimonials/Mary-Jessica.jpg"
+			},
+			{
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "Patricia Anthony",
+				"imageUrl": "/images/testimonials/Patricia-Anthony.jpg"
+			},
+			{
+				"text": "“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “",
+				"name": "William Richard",
+				"imageUrl": "/images/testimonials/William-Richard.jpg"
 			}
 		]
 	},
 	"footer": {
-		"text": "Copyright © 2020 petrbilek.com",
+		"text": "Copyright © 2020 shop.com",
 		"link": [
 			{
 				"title": "Get in touch",

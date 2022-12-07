@@ -24,16 +24,19 @@ $colorList: (
 // @include color-variable-generator($colorList) ;// use example
 
 // responsive breakpoints columns creator mixin
+
 $breakpoints: (
-	bp-1: 1400,
+	// 	bp1: 1400,
 	// bp = breakpoint
-	bp-3: 992,
-	bp-5: 576,
+	bp3: 992,
+	bp4: 768,
+	bp5: 576
 );
 @mixin column-divide-with-breakpoints(
 	$map: $breakpoints,
-	$totalColumn: 12,
-	$widthUnite: "%"
+	$totalColumn: 10,
+	$widthUnite: "%",
+	$widthValue: 100 / $totalColumn
 ) {
 	@each $Breakpoints, $BreakpointsValue in $map {
 		@if $BreakpointsValue > 1200 {
@@ -42,28 +45,24 @@ $breakpoints: (
 		} @else {
 			$style-direction: max;
 		}
-		@media screen and  (#{$style-direction}-width: #{$BreakpointsValue}) {
+		@media only screen and  (#{$style-direction}-width: #{$BreakpointsValue}) {
 			@for $i from $totalColumn through 1 {
 				.col__#{$Breakpoints}-#{$i} {
-					flex-grow: 1; // bootstrap policy >> flex: 0 0 auto; with width property .
-					// 100 / 12 ($totalColumns) =  8.33333333333
-					flex-basis: 8.33333333333 * #{$i}#{$widthUnite};
+					flex: 1 1 $widthValue * $i#{$widthUnite};
 				}
 			}
 		}
 	}
 }
 /* use example */
-// @include column-divide-with-breakpoints()
+//  @include column-divide-with-breakpoints();
 
 // responsive without breakpoints columns creator mixin
 
 @mixin column-divide-without-breakpoints($totalColumn: 12, $widthUnite: "%") {
 	@for $i from $totalColumn through 1 {
 		.col__#{$i} {
-			flex-grow: 1; // bootstrap policy >> flex: 0 0 auto; with width property .
-			// 100 / 12 ($totalColumns) =  8.33333333333
-			flex-basis: 8.33333333333 *#{$i}#{$widthUnite};
+			flex: 1 1 $widthValue * $i#{$widthUnite};
 		}
 	}
 }

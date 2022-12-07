@@ -1,0 +1,26 @@
+.testimonial__section {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	.testimonial__section_row {
+		gap: 1.3rem;
+	}
+
+	.section__head {
+		padding: 0px 3rem !important;
+	}
+}
+.carousel__container {
+	padding: 2rem 1rem;
+	overflow: hidden;
+
+	ul,
+	.react-multi-carousel-track {
+		gap: 1rem !important;
+	}
+	.react-multiple-carousel__arrow--left {
+		color: white;
+		font-size: 45px;
+	}
+}

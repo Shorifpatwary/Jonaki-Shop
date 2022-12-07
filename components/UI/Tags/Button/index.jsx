@@ -1,12 +1,21 @@
 import React from "react";
 import style from "@/Tags/Button/style.module.scss";
 import { RightArrow } from "@/public/images";
+/**
+ *
+ * @param {String} variant || primary || outline || secondary
+ * @param {String} size || md || lg || sm
+ * @param {String} icon || append || prepend
+ * @param {String} children
+ * @param {any} TagName "" any
+ * @returns
+ */
 const Button = ({
-	variant = "primary", // primary , outline , secondary
-	size = "md", // lg , md , sm
-	icon = null, // append , prepend
+	variant = "primary",
+	size = "md",
+	icon = null,
 	className = null,
-	children = "Button Text", // = null
+	children = "Button",
 	TagName = "button", // a or anything
 	...props
 }) => {

@@ -25,21 +25,25 @@ const ProductCard = ({ product }) => {
 				/>
 			</Div>
 			<Div className={`${style.product__info} flex__column-start gap__2`}>
-				<Div className={`${style.product__text} `}>
+				<Div className={`${style.product__text} flex__column-start gap__1`}>
 					<Div className={`${style.product__title} `}>
 						<H5>{product.name}</H5>
 					</Div>
 					<Div className={`${style.product__excerpt} `}>
-						<P1>{product.description.slice(0, 60)} ...</P1>
+						<P1>
+							{product.description.replace(/(<([^>]+)>)/gi, "").slice(0, 60)}{" "}
+							...
+						</P1>
 					</Div>
 				</Div>
 
 				<Div className={`${style.product__action} flex__center-sb w__10  `}>
 					<Div className={`${style.product__price} flex__column-start gap__1`}>
-						<Div className={`${style.current__price} `}>
+						<H5 className={`${style.current__price} `}>
 							{product.price.formatted_with_code}
-						</Div>
-						<Div className={`${style.old__price} `}>old price</Div>
+						</H5>
+						{/* old price not available on this api  */}
+						{/* <Div className={`${style.old__price} `}>old price</Div> */}
 					</Div>
 					<Div className={`${style.product__button} `}>
 						<Link href={`/product/${product.id}`}>

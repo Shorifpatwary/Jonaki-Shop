@@ -1,0 +1,160 @@
+@import "../abstracts/variables";
+/* bootstrap col classes  */
+
+.bpCol__12 {
+    flex: 1 1 100%;
+}
+.bpCol__11 {
+    flex: 1 1 91.6666666667%;
+}
+.bpCol__10 {
+    flex: 1 1 83.3333333333%;
+}
+.bpCol__9 {
+    flex: 1 1 75%;
+}
+.bpCol__8 {
+    flex: 1 1 66.6666666667%;
+}
+.bpCol__7 {
+    flex: 1 1 58.3333333333%;
+}
+.bpCol__6 {
+    flex: 1 1 50%;
+}
+.bpCol__5 {
+    flex: 1 1 41.6666666667%;
+}
+.bpCol__4 {
+    flex: 1 1 33.3333333333%;
+}
+.bpCol__3 {
+    flex: 1 1 25%;
+}
+.bpCol__2 {
+    flex: 1 1 16.6666666667%;
+}
+.bpCol__1 {
+    flex: 1 1 8.3333333333%;
+}
+
+/* bootstrap col break point 3 classes  */
+
+@media only screen and (max-width: $bp-3) {
+    .bpCol__bp3-12 {
+        flex: 1 1 100%;
+   }
+    .bpCol__bp3-11 {
+        flex: 1 1 91.6666666667%;
+   }
+    .bpCol__bp3-10 {
+        flex: 1 1 83.3333333333%;
+   }
+    .bpCol__bp3-9 {
+        flex: 1 1 75%;
+   }
+    .bpCol__bp3-8 {
+        flex: 1 1 66.6666666667%;
+   }
+    .bpCol__bp3-7 {
+        flex: 1 1 58.3333333333%;
+   }
+    .bpCol__bp3-6 {
+        flex: 1 1 50%;
+   }
+    .bpCol__bp3-5 {
+        flex: 1 1 41.6666666667%;
+   }
+    .bpCol__bp3-4 {
+        flex: 1 1 33.3333333333%;
+   }
+    .bpCol__bp3-3 {
+        flex: 1 1 25%;
+   }
+    .bpCol__bp3-2 {
+        flex: 1 1 16.6666666667%;
+   }
+    .bpCol__bp3-1 {
+        flex: 1 1 8.3333333333%;
+   }
+}
+/* bootstrap col break point 4 classes  */
+
+@media only screen and (max-width: $bp-4) {
+    .bpCol__bp4-12 {
+        flex: 1 1 100%;
+   }
+    .bpCol__bp4-11 {
+        flex: 1 1 91.6666666667%;
+   }
+    .bpCol__bp4-10 {
+        flex: 1 1 83.3333333333%;
+   }
+    .bpCol__bp4-9 {
+        flex: 1 1 75%;
+   }
+    .bpCol__bp4-8 {
+        flex: 1 1 66.6666666667%;
+   }
+    .bpCol__bp4-7 {
+        flex: 1 1 58.3333333333%;
+   }
+    .bpCol__bp4-6 {
+        flex: 1 1 50%;
+   }
+    .bpCol__bp4-5 {
+        flex: 1 1 41.6666666667%;
+   }
+    .bpCol__bp4-4 {
+        flex: 1 1 33.3333333333%;
+   }
+    .bpCol__bp4-3 {
+        flex: 1 1 25%;
+   }
+    .bpCol__bp4-2 {
+        flex: 1 1 16.6666666667%;
+   }
+    .bpCol__bp4-1 {
+        flex: 1 1 8.3333333333%;
+   }
+}
+/* bootstrap col break point 5 classes  */
+
+@media only screen and (max-width: $bp-5) {
+    .bpCol__bp5-12 {
+        flex: 1 1 100%;
+   }
+    .bpCol__bp5-11 {
+        flex: 1 1 91.6666666667%;
+   }
+    .bpCol__bp5-10 {
+        flex: 1 1 83.3333333333%;
+   }
+    .bpCol__bp5-9 {
+        flex: 1 1 75%;
+   }
+    .bpCol__bp5-8 {
+        flex: 1 1 66.6666666667%;
+   }
+    .bpCol__bp5-7 {
+        flex: 1 1 58.3333333333%;
+   }
+    .bpCol__bp5-6 {
+        flex: 1 1 50%;
+   }
+    .bpCol__bp5-5 {
+        flex: 1 1 41.6666666667%;
+   }
+    .bpCol__bp5-4 {
+        flex: 1 1 33.3333333333%;
+   }
+    .bpCol__bp5-3 {
+        flex: 1 1 25%;
+   }
+    .bpCol__bp5-2 {
+        flex: 1 1 16.6666666667%;
+   }
+    .bpCol__bp5-1 {
+        flex: 1 1 8.3333333333%;
+   }
+}

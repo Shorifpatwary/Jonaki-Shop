@@ -2,18 +2,17 @@ import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
+import Button from "@/components/UI/Tags/Button";
 // import Footer from "../components/Footer";
 const PageNotFound = () => {
 	const router = useRouter();
-	const goHomePage = () => {
-		router.replace("/");
-	};
+	const goHomePage = () => {};
 	return (
 		<>
 			<div className="flex__column-center gap__3">
 				<h2>Your Enter a incorrect URL . </h2>
 				<h1>Page 404</h1>
-				<button onClick={goHomePage}>Go Home Page </button>
+				<Link href="/">Go Home Page </Link>
 			</div>
 		</>
 	);
@@ -26,7 +25,7 @@ PageNotFound.getLayout = (page) => {
 		<>
 			{page}
 			<h2>Add Footer only </h2>
-			<Link href="/"> Go Back </Link>
+			<Link href="/home"> Go Back </Link>
 			{/* <Footer /> */}
 		</>
 	);
