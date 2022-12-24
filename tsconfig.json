@@ -34,7 +34,9 @@
 		"**/*.tsx",
 		"components/UI/Button/indexs.jsx",
 		"pages/index.jsx",
-		"components/UI/Tags/Button/index.jsx"
+		"components/UI/Tags/Button/index.jsx",
+		"pages/products/index.jsx",
+		"components/UI/BreadCrumbs/index.jsx"
 	],
 	"exclude": ["node_modules"]
 }

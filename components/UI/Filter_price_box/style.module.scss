@@ -1,0 +1,43 @@
+@import "../../../styles/abstracts/variables";
+.price__input_label {
+	color: $tx-color-primary;
+	font-weight: $fw-regular;
+	font-size: 1rem;
+
+	input[type="number"] {
+		// number input css
+		border: $br-1 !important;
+		border-radius: $br-rounded;
+		padding: 1rem;
+		max-width: 120px;
+		color: $tx-color-secondary;
+		text-align: center;
+
+		&:focus {
+			/* set the outline and outline offset */
+			outline: none;
+			outline-offset: 0;
+
+			/* change the border color */
+			border-color: 1px solid rgb(104, 235, 104) !important;
+		}
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			// -webkit-appearance: none;
+			padding: 1rem 0rem;
+			color: green;
+			background-color: red;
+			margin: 0;
+			&:hover {
+				/* change the background color */
+				background-color: rgb(223, 18, 18);
+				cursor: pointer;
+			}
+			&:active {
+				/* change the background color */
+				background-color: rgb(230, 111, 111);
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import "../../abstracts/variables";
+.home__wrapper {
+	.categories__block {
+		height: 100%;
+	}
+}
+
+// products page
+.product__page-header {
+	padding: 1rem $section-vertical-padding;
+}
+// filtering products
+.filter__bar {
+	flex-basis: 250px;
+	max-width: 270px;
+	align-self: flex-start;
+	.filter__price-box {
+		margin: 1rem 0rem;
+		span {
+			display: flex;
+			align-self: flex-end;
+
+			color: $tx-color-secondary;
+			margin-bottom: 20px;
+		}
+		// price input box
+		.price__input-box {
+			max-height: 150px;
+		}
+	}
+}

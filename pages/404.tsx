@@ -12,7 +12,7 @@ const PageNotFound = () => {
 			<div className="flex__column-center gap__3">
 				<h2>Your Enter a incorrect URL . </h2>
 				<h1>Page 404</h1>
-				<Link href="/">Go Home Page </Link>
+				<Link href="/">Go Home Page</Link>
 			</div>
 		</>
 	);

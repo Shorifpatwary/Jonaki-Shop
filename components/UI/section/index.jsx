@@ -2,11 +2,11 @@ import React from "react";
 import style from "@/UiComponent/section/section.module.scss";
 /**
  *
- * @param {*} name any string
- * @param {*} className
- * @param {*} rowClassName
+ * @param {string} name any string
+ * @param {string} className
+ * @param {string} rowClassName
  * @param {*} children jsx elements
- * @param {*} TagName default section,
+ * @param {string} TagName default section,
  * @returns
  */
 const Section = ({

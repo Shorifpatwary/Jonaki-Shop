@@ -3,7 +3,7 @@ import Head from "next/head";
 import "@/styles/main.scss";
 // additional styles from third party libraries .
 import "react-multi-carousel/lib/styles.css";
-
+import Loading from "@/UiComponent/Loading";
 // components
 import ErrorBoundary from "@/tools/HOC/Error";
 import MegaHeader from "@/layoutComponent/Mega-Header";
@@ -31,6 +31,8 @@ const App = ({ Component, pageProps }: AppProps) => {
 						rel="stylesheet"
 					/>
 				</Head>
+				{/* loading  */}
+				<Loading />
 				{/* Header */}
 				<MegaHeader />
 				<Component {...pageProps} />

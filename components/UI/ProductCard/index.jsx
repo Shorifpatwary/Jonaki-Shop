@@ -12,12 +12,12 @@ const ProductCard = ({ product }) => {
 	console.log(product, "from product page ");
 
 	return (
-		<Div
-			className={`${style.product__wrapper} pad__2 flex__column-start gap__2`}
+		<div
+			className={`${style.product__wrapper} pad__1 flex__column-start gap__2`}
 		>
 			<Div className={`${style.product__image} `}>
 				<Image
-					src={product.image.url}
+					src={product.image?.url}
 					width={235}
 					height={180}
 					// placeholder={productPlaceholder}
@@ -27,7 +27,9 @@ const ProductCard = ({ product }) => {
 			<Div className={`${style.product__info} flex__column-start gap__2`}>
 				<Div className={`${style.product__text} flex__column-start gap__1`}>
 					<Div className={`${style.product__title} `}>
-						<H5>{product.name}</H5>
+						<Link href={`/product/${product.id}`}>
+							<H5>{product.name}</H5>
+						</Link>
 					</Div>
 					<Div className={`${style.product__excerpt} `}>
 						<P1>
@@ -47,13 +49,13 @@ const ProductCard = ({ product }) => {
 					</Div>
 					<Div className={`${style.product__button} `}>
 						<Link href={`/product/${product.id}`}>
-							<BtnPrimary size="sm"> order </BtnPrimary>
+							<BtnPrimary size="sm">Buy</BtnPrimary>
 						</Link>
 					</Div>
 				</Div>
 			</Div>
-		</Div>
+		</div>
 	);
 };
 
-export default ProductCard;
+export default React.memo(ProductCard);

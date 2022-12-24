@@ -1,15 +1,17 @@
-import { useRouter } from "next/router";
+import { useRouter, NextRouter } from "next/router";
 import Link from "next/link";
 import Li from "@/UiComponent/Tags/Li";
 const BreadCrumbs = () => {
-	const router = useRouter();
-	const linkPath = router.asPath.split("/");
+	const router: NextRouter = useRouter();
+	console.log(router, "router from breadcrumbs ");
+	// breadcrumb path without query string .
+	const linkPath: string[] = router.asPath.split("?")[0].split("/");
 	linkPath.shift();
 
 	return (
 		<ul className="d__flex gap__1">
 			<Link href={"/"}>Home Page </Link>
-			{linkPath.map((path, i) => (
+			{linkPath.map((path: string, i) => (
 				<>
 					<Link
 						href={`/${linkPath.slice(0, i + 1).join("/")}`}

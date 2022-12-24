@@ -19,14 +19,14 @@ const Home = ({
 	babiesCategories = [],
 	babiesProducts = [],
 }) => {
-	console.log(products, "products in home page ");
+	// console.log(products, "products in home page ");
 
 	let originalCategories = categories.data;
 	let bannerCategories = ArraySlicer(originalCategories, 5);
 	let bestSellingProducts = ArraySlicer(products.data, 3);
 	let specialProducts = ArraySlicer(products.data, 4);
 	let bestFromBabiesCategory = ArraySlicer(babiesCategories.data, 5);
-	let bestFromBabiesProducts = ArraySlicer(babiesProducts.data, 4);
+	let bestFromBabiesProducts = ArraySlicer(babiesProducts.data, 3);
 
 	let bannerOneCategory = bannerCategories[0];
 	let bannerTwoCategory = bannerCategories[1];
@@ -81,7 +81,6 @@ const Home = ({
 						))}
 					</Div>
 				</Section>
-
 				{/* Best from babies */}
 				<Section
 					name="best__selling-products"
