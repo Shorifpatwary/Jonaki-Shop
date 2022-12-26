@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import Style from "./style.module.scss";
+import PillSecondary from "@/components/UI/Pill/Secondary";
 
 const Filter_cat_item = ({ value, name, checked, handleChange, products }) => {
-	// useMemo(() => first, [second]);
 	return (
 		<div
 			className={`${Style.Filter__cat_item} flex__center-sb w__10 gap__1`}
@@ -19,7 +19,7 @@ const Filter_cat_item = ({ value, name, checked, handleChange, products }) => {
 				/>
 				<label htmlFor={value}> {name} </label>
 			</div>
-			<span className="">{products}</span>
+			<PillSecondary className="">{products}</PillSecondary>
 			{/* </div> */}
 		</div>
 	);

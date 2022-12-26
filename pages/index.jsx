@@ -19,8 +19,6 @@ const Home = ({
 	babiesCategories = [],
 	babiesProducts = [],
 }) => {
-	// console.log(products, "products in home page ");
-
 	let originalCategories = categories.data;
 	let bannerCategories = ArraySlicer(originalCategories, 5);
 	let bestSellingProducts = ArraySlicer(products.data, 3);

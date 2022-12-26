@@ -9,8 +9,6 @@ import Link from "next/link";
 // import { productPlaceholder } from "@/Image";
 
 const ProductCard = ({ product }) => {
-	console.log(product, "from product page ");
-
 	return (
 		<div
 			className={`${style.product__wrapper} pad__1 flex__column-start gap__2`}
@@ -27,7 +25,7 @@ const ProductCard = ({ product }) => {
 			<Div className={`${style.product__info} flex__column-start gap__2`}>
 				<Div className={`${style.product__text} flex__column-start gap__1`}>
 					<Div className={`${style.product__title} `}>
-						<Link href={`/product/${product.id}`}>
+						<Link href={`/products/${product.id}`}>
 							<H5>{product.name}</H5>
 						</Link>
 					</Div>

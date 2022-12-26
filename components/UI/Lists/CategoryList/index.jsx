@@ -5,7 +5,7 @@ const CategoryList = ({ items = [], className = "", ...props }) => {
 	return (
 		<ul {...props} className={`flex__column-start gap__1 ${className}`}>
 			{items?.map((item) => (
-				<Link key={item.id} href={`/category/${item.slug}`}>
+				<Link key={item.id} href={`/products?category_slug=${item.slug}`}>
 					<Li>{item.name}</Li>
 				</Link>
 			))}

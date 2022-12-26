@@ -3,7 +3,7 @@ import Link from "next/link";
 import Li from "@/UiComponent/Tags/Li";
 const BreadCrumbs = () => {
 	const router: NextRouter = useRouter();
-	console.log(router, "router from breadcrumbs ");
+
 	// breadcrumb path without query string .
 	const linkPath: string[] = router.asPath.split("?")[0].split("/");
 	linkPath.shift();

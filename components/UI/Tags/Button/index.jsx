@@ -19,7 +19,6 @@ const Button = ({
 	TagName = "button", // a or anything
 	...props
 }) => {
-	console.log(RightArrow, "right arrow from button");
 	return (
 		<TagName
 			className={` flex__center  ${style[variant]} ${style[size]}  ${style.Button__class}  ${className}`}
@@ -69,7 +68,7 @@ export default Button;
 // 	TagName = "button",
 // 	...props
 // }) => {
-// 	console.log(RightArrow, "right arrow from button");
+//
 // 	return (
 // 		<TagName
 // 			className={` flex__center  ${style[variant]} ${style[size]}  ${style.Button__class}  ${className}`}

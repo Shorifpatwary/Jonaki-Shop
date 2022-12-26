@@ -1,0 +1,33 @@
+@import "../../../styles/abstracts/variables";
+.single__product_image {
+	padding: 0.5rem;
+
+	position: relative;
+
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: $br-rounded;
+	img {
+		object-fit: contain !important;
+		width: 100%;
+	}
+}
+.main__image {
+}
+.single__image {
+	position: absolute;
+
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(0.8);
+	transition: 0.5s ease-in-out;
+}
+.single__active_image {
+	opacity: 1;
+	transform: scale(1);
+	pointer-events: visible;
+}
+.mini__images {
+}
+.imageItem {
+}

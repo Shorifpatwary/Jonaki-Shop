@@ -1,4 +1,9 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
+
 // styles
 import "@/styles/main.scss";
 // additional styles from third party libraries .
@@ -10,6 +15,23 @@ import MegaHeader from "@/layoutComponent/Mega-Header";
 import Footer from "@/layoutComponent/Footer";
 
 const App = ({ Component, pageProps }: AppProps) => {
+	const Router = useRouter();
+	useEffect(() => {
+		// Start the loading bar when a page starts loading
+		Router.events.on("routeChangeStart", () => {
+			NProgress.start();
+		});
+		// Stop the loading bar when a page finishes loading
+		Router.events.on("routeChangeComplete", () => {
+			NProgress.done();
+		});
+
+		// Stop the loading bar if an error occurs
+		Router.events.on("routeChangeError", () => {
+			NProgress.done();
+		});
+	}, [Router.events]);
+
 	// return <Component {...pageProps} />;
 	if (Component.getLayout) {
 		return Component.getLayout(<Component {...pageProps} />);
@@ -32,7 +54,8 @@ const App = ({ Component, pageProps }: AppProps) => {
 					/>
 				</Head>
 				{/* loading  */}
-				<Loading />
+				{/* using nprogress for loading   */}
+				{/* <Loading /> */}
 				{/* Header */}
 				<MegaHeader />
 				<Component {...pageProps} />

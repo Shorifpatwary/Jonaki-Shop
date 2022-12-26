@@ -1,6 +1,6 @@
 import React from "react";
-import style from "@/UiComponent/Pill/Primary/style.module.scss";
-import Link from "next/link";
+import Style from "./style.module.scss";
+
 const PillPrimary = ({
 	children = "Pill",
 	className = "",
@@ -8,13 +8,13 @@ const PillPrimary = ({
 	...props
 }) => {
 	return (
-		<Link
+		<span
 			href={href}
-			className={`${style.pill_primary} ${className}`}
+			className={`${Style.pill__primary} ${className}`}
 			{...props}
 		>
 			{children}
-		</Link>
+		</span>
 	);
 };
 

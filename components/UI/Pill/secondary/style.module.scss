@@ -1,10 +1,10 @@
 @import "../../../../styles/abstracts/variables";
-.pill__primary {
-	background: $pill-primary;
-	color: $tx-color-primary;
+.pill__secondary {
+	background: black; // lighten($color-primary, 0.7)
+	color: $color-primary;
 	border-radius: $br-rounded;
 	text-align: center;
-	padding: 6px;
+	padding: 3px 6px;
 	white-space: nowrap;
 	// &:hover {
 	// 	color: $color-primary;
