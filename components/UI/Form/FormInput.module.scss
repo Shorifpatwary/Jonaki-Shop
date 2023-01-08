@@ -1,0 +1,13 @@
+@import "../../../styles/abstracts/variables";
+.form__input {
+	display: flex;
+	gap: 0.5rem;
+
+	label {
+		font-size: 0.8rem;
+		color: $tx-color-primary;
+		font-weight: $fw-regular;
+	}
+	input {
+	}
+}
