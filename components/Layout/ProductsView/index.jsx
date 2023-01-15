@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/router";
 
-import Section from "@/components/UI/Section";
+import Section from "../../UI/Section";
 import BreadCrumbs from "@/UiComponent/BreadCrumbs/index.tsx";
 import Div from "@/UiComponent/Tags/Div";
 import H3 from "@/UiComponent/Tags/Heading/H3";

@@ -5,7 +5,7 @@ import Div from "@/Tags/Div";
 
 import Link from "next/link";
 import { userIcon, cartIcon, mobileMenu } from "@/public/images";
-import Logo from "@/UiComponent/Logo";
+import Logo from "../../../UI/Logo";
 import SearchBox from "@/UiComponent/SearchBox";
 const HeaderMiddle = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useContext(MobileMenu);

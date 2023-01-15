@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 
 import Style from "./style.module.scss";
-import Section from "@/components/UI/Section";
+import Section from "../../UI/Section";
 import Div from "@/UiComponent/Tags/Div";
 import H4 from "@/UiComponent/Tags/Heading/H4";
 import Button from "@/UiComponent/Tags/Button";
