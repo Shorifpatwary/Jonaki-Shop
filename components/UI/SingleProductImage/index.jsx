@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import Style from "./Style.module.scss";
+import Style from "./style.module.scss";
 
 const SingleProductImage = ({ productImages }) => {
 	// Set up state to store the current main image
