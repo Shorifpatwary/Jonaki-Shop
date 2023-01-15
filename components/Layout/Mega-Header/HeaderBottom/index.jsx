@@ -3,7 +3,7 @@ import { MobileMenu } from "@/layoutComponent/Mega-Header";
 
 import Div from "@/Tags/Div";
 import { HeaderData } from "..";
-import NavLinks from "@/UiComponent/NavLinks";
+import NavLinks from "@/UiComponent/Navlinks";
 const HeaderBottom = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useContext(MobileMenu);
 	const headerData = useContext(HeaderData);
