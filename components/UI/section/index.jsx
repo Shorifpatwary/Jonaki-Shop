@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Style.module.scss";
+import Style from "./style.module.scss";
 /**
  * @param {string} name any string
  * @param {string} className
