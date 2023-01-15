@@ -4,7 +4,7 @@ import data from "@/public/data/data.json";
 
 import Banner from "@/layoutComponent/Banner";
 import Testimonials from "@/layoutComponent/Testimonials";
-import Section from "@/UiComponent/section";
+import Section from "@/components/UI/Section";
 
 import Div from "@/components/UI/Tags/Div";
 import H4 from "@/UiComponent/Tags/Heading/H4";

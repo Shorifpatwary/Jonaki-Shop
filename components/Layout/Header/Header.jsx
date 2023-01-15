@@ -1,11 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import useToggle from "../../../tools/customHooks/useToggle";
 
 import logo from "../../../assets/images/res-logo.png";
 import { NavLink, Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-
-// import { cartUiActions } from "../../store/shopping-cart/cartUiSlice";
 
 const nav__links = [
 	{
@@ -50,9 +47,7 @@ const Header = () => {
 						}`}
 						onClick={() => setIsMobileMenuOpen()}
 					>
-						<div
-							className={`menu flex__center-s-e grow flex__column-bp-3 `}
-						>
+						<div className={`menu flex__center-s-e grow flex__column-bp-3 `}>
 							{nav__links.map((item, index) => (
 								<NavLink
 									to={item.path}

@@ -1,6 +1,6 @@
 import React from "react";
 import data from "@/public/data/data.json";
-import Section from "@/UiComponent/section";
+import Section from "@/components/UI/Section";
 import Div from "@/Tags/Div";
 import H4 from "@/Tags/Heading/H4";
 import PillPrimary from "@/UiComponent/Pill/Primary";

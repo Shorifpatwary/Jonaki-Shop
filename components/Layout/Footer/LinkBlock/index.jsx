@@ -4,7 +4,6 @@ import Link from "next/link";
 import Div from "@/components/UI/Tags/Div";
 import style from "@/layoutComponent/Footer/LinkBlock/style.module.scss";
 import H4 from "@/Tags/Heading/H4";
-import A from "@/Tags/A";
 const FooterLinkBlock = ({ className = "hello", title = "", links = [] }) => {
 	return (
 		<Div

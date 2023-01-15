@@ -1,12 +1,7 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Button from "@/components/UI/Tags/Button";
-// import Footer from "../components/Footer";
 const PageNotFound = () => {
-	const router = useRouter();
-	const goHomePage = () => {};
 	return (
 		<>
 			<div className="flex__column-center gap__3">

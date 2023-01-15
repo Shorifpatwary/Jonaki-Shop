@@ -5,7 +5,6 @@ import Div from "@/Tags/Div";
 
 import Link from "next/link";
 import { userIcon, cartIcon, mobileMenu } from "@/public/images";
-// import userIcon from "@/public/icons/user.svg";
 import Logo from "@/UiComponent/Logo";
 import SearchBox from "@/UiComponent/SearchBox";
 const HeaderMiddle = () => {

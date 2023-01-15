@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 
-import Section from "@/UiComponent/section";
+import Section from "@/components/UI/Section";
 import { CartContext } from "@/tools/Context/cartProvider";
 import CartItem from "@/UiComponent/CartItem";
 import H2 from "@/components/UI/Tags/Heading/H2";

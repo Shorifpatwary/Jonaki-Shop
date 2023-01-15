@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Style from "./style.module.scss";
+import Style from "./Style.module.scss";
 
 const createList = (num) => Array.from(Array(num).keys());
 

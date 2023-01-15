@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import Style from "./style.module.scss";
-import PillSecondary from "@/components/UI/Pill/Secondary";
 
 const Filter_cat_item = ({ value, name, checked, handleChange, products }) => {
 	return (

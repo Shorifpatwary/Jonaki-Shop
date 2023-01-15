@@ -1,5 +1,4 @@
 import Style from "./style.module.scss";
-import Link from "next/link";
 type Props = {
 	label: string;
 	text: string | React.ReactNode;

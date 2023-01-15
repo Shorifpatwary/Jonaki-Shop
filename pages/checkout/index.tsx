@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Link from "next/link";
 import { CartContext } from "@/tools/Context/cartProvider";
 
-import Section from "@/components/UI/section";
+import Section from "@/components/UI/Section";
 import Button from "@/UiComponent/Tags/Button";
 
 const Checkout = () => {
