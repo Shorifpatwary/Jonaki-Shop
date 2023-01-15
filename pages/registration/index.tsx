@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Section from "@/components/UI/Section";
+import Section from "@/components/UI/section";
 import H2 from "@/UiComponent/Tags/Heading/H2";
 import Form from "@/UiComponent/Form/Form";
 import FormInput from "@/UiComponent/Form/FormInput";
