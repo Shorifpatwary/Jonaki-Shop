@@ -4,8 +4,6 @@ import Image from "next/image";
 import Style from "./Style.module.scss";
 
 const SingleProductImage = ({ productImages }) => {
-	console.log(productImages, "product image from single product image ");
-	console.log(Style, "style object ");
 	// Set up state to store the current main image
 	const [mainImage, setMainImage] = useState(0);
 

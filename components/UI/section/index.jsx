@@ -1,7 +1,6 @@
 import React from "react";
 import style from "@/UiComponent/section/section.module.scss";
 /**
- *
  * @param {string} name any string
  * @param {string} className
  * @param {string} rowClassName

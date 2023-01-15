@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/router";
 
 import Section from "@/UiComponent/section";
@@ -6,15 +6,12 @@ import BreadCrumbs from "@/UiComponent/BreadCrumbs/index.tsx";
 import Div from "@/UiComponent/Tags/Div";
 import H3 from "@/UiComponent/Tags/Heading/H3";
 import ProductCard from "@/UiComponent/ProductCard";
-import PillSecondary from "@/components/UI/Pill/Secondary";
 import Filter_cat_item from "@/UiComponent/Filter_cat_item";
 import PriceInput from "@/UiComponent/Filter_price_box";
 import ButtonPrimary from "@/UiComponent/Tags/Button/Primary";
 import ListPagination from "@/components/UI/ListPagination";
 
 const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
-	console.log(categories, "category slug ");
-	console.log(products, "from products ");
 	// router object
 	const router = useRouter();
 
@@ -25,6 +22,8 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 	const [currentPage, setCurrentPage] = useState(currentPageNo);
 
 	const [filter_categories, setFilter_categories] = useState([]);
+
+	const [mounted, setMounted] = useState(false);
 
 	const [minPrice, setMinPrice] = useState(0);
 	const [maxPrice, setMaxPrice] = useState(1999);
@@ -52,17 +51,21 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 		}
 	};
 
-	// apply  category filter and pagination
+	// apply category filter and pagination
 	useEffect(() => {
-		router.push({
-			pathname: "/products",
-			query: {
-				category_id: [...filter_categories],
-				"price.above": minPrice,
-				"price.below": maxPrice,
-				page: currentPage,
-			},
-		});
+		// prevent useEffect from running on first render.
+		setMounted(true);
+		if (mounted) {
+			router.push({
+				pathname: "/products",
+				query: {
+					category_id: [...filter_categories],
+					"price.above": minPrice,
+					"price.below": maxPrice,
+					page: currentPage,
+				},
+			});
+		}
 	}, [currentPage, filter_categories]);
 
 	// filter submit
@@ -74,7 +77,6 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 				category_id: filter_categories,
 				"price.above": minPrice,
 				"price.below": maxPrice,
-
 				page: currentPage,
 			},
 		});

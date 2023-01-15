@@ -6,32 +6,23 @@ import FormInput from "@/UiComponent/Form/FormInput";
 
 const Registration = () => {
 	const [message, setMessage] = useState("");
-
 	const initialValues = {
-		emailAddress: "",
-		password: "",
+		email: "",
 	};
-
-	const submit = (form: { emailAddress: string; password: string }) => {
-		setMessage(
-			`Thanks for logging up, ${form.firstName} ${form.lastName}! We've sent you an email to ${form.emailAddress}.`
-		);
+	const submit = (form: { email: string; password: string }) => {
+		setMessage(`Thanks for logging up, ${form.email}`);
 	};
 	return (
 		<Section name="registration">
-			<h2>This is a Login page </h2>
+			<h2>Login page coming soon</h2>
 			<div className="pad__6">
 				<H2>Login page </H2>
-
 				<Form submit={submit} initialValues={initialValues}>
-					<FormInput label="Email Address" type="email" name="emailAddress" />
-					<FormInput label="Password" type="password" name="password" />
+					<FormInput label="Email Address" type="email" name="email" />
 				</Form>
-
 				<p>{message}</p>
 			</div>
 		</Section>
 	);
 };
-
 export default Registration;

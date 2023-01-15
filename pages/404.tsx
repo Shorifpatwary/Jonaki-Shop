@@ -24,8 +24,7 @@ PageNotFound.getLayout = (page) => {
 	return (
 		<>
 			{page}
-			<h2>Add Footer only </h2>
-			<Link href="/home"> Go Back </Link>
+			<Link href="/"> Go Back </Link>
 			{/* <Footer /> */}
 		</>
 	);

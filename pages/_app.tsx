@@ -8,9 +8,10 @@ import "nprogress/nprogress.css";
 import "@/styles/main.scss";
 // additional styles from third party libraries .
 import "react-multi-carousel/lib/styles.css";
-import Loading from "@/UiComponent/Loading";
-// components
+// import Loading from "@/UiComponent/Loading";
+
 import ErrorBoundary from "@/tools/HOC/Error";
+import CartProvider from "@/tools/Context/cartProvider";
 import MegaHeader from "@/layoutComponent/Mega-Header";
 import Footer from "@/layoutComponent/Footer";
 
@@ -57,10 +58,12 @@ const App = ({ Component, pageProps }: AppProps) => {
 				{/* using nprogress for loading   */}
 				{/* <Loading /> */}
 				{/* Header */}
-				<MegaHeader />
-				<Component {...pageProps} />
-				{/* <ErrorBoundary> */}
-				<Footer />
+				<CartProvider>
+					<MegaHeader />
+					<Component {...pageProps} />
+					{/* <ErrorBoundary> */}
+					<Footer />
+				</CartProvider>
 				{/* </ErrorBoundary> */}
 			</ErrorBoundary>
 		</>

@@ -36,7 +36,8 @@
 		"pages/index.jsx",
 		"components/UI/Tags/Button/index.jsx",
 		"pages/products/index.jsx",
-		"components/UI/BreadCrumbs/index.jsx"
+		"components/UI/BreadCrumbs/index.jsx",
+		"components/UI/section/index.jsx"
 	],
 	"exclude": ["node_modules"]
 }

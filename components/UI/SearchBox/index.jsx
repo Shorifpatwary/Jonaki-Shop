@@ -27,14 +27,21 @@ const SearchBox = ({ className = "", ...props }) => {
 	// handle submit button
 	const handleSubmit = (e) => {
 		// e.preventDefault();
-		console.log(e, "Hello this is a event object please give");
 		if (!searchTerm) {
 			alert("search term empty.");
 		} else {
 			router.push(
-				`/search/search_term=${searchTerm}/category=${category}`,
+				{
+					pathname: "/products",
+					query: {
+						category: category,
+						query: searchTerm,
+					},
+				},
 				undefined,
-				{ shallow: true }
+				{
+					shallow: true,
+				}
 			);
 		}
 	};

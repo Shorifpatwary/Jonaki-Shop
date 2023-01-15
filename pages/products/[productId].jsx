@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Head from "next/head";
-import Link from "next/link";
-import getCategories from "@/tools/Functions/getCategories";
+import { CartContext } from "@/tools/Context/cartProvider";
+
 import P3 from "@/UiComponent/Tags/P/P3";
 import Section from "@/UiComponent/section";
 import SingleProductImage from "@/UiComponent/SingleProductImage";
@@ -10,8 +10,22 @@ import LabelAndText from "@/UiComponent/LabelAndText/index.tsx";
 import Button from "@/UiComponent/Tags/Button";
 import ButtonPrimary from "@/UiComponent/Tags/Button/Primary";
 const productsPage = ({ product }) => {
-	console.log(product, "context from single products page ");
 	const [productOrderAmount, setProductOrderAmount] = useState(1);
+	const { cartData, addItemToCart } = useContext(CartContext);
+	// const cartId = cartData?.id;
+
+	const decrementProductOrderAmount = () => {
+		if (productOrderAmount <= 1) {
+			return;
+		} else {
+			setProductOrderAmount((prev) => prev - 1);
+		}
+	};
+
+	const handleAddToCart = (productId) => {
+		addItemToCart(productId, productOrderAmount);
+	};
+
 	return (
 		<>
 			<Head lang="en">
@@ -71,7 +85,7 @@ const productsPage = ({ product }) => {
 								<Button
 									variant="outline"
 									className="product__decrement-button"
-									onClick={() => setProductOrderAmount((prev) => prev - 1)}
+									onClick={decrementProductOrderAmount}
 								>
 									-
 								</Button>
@@ -85,7 +99,9 @@ const productsPage = ({ product }) => {
 								</Button>
 							</div>
 							{/* add to cart button */}
-							<ButtonPrimary>Add To Cart</ButtonPrimary>
+							<ButtonPrimary onClick={() => handleAddToCart(product.id)}>
+								Add To Cart
+							</ButtonPrimary>
 						</div>
 					</div>
 				</div>

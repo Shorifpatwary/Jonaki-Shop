@@ -19,7 +19,7 @@ const Filter_cat_item = ({ value, name, checked, handleChange, products }) => {
 				/>
 				<label htmlFor={value}> {name} </label>
 			</div>
-			<PillSecondary className="">{products}</PillSecondary>
+			<span className="w__1">{products}</span>
 			{/* </div> */}
 		</div>
 	);

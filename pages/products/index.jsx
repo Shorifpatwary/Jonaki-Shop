@@ -3,6 +3,9 @@ import getCategories from "@/tools/Functions/getCategories";
 import ProductsView from "@/layoutComponent/ProductsView";
 
 const productsPage = ({ categories, products }) => {
+	if (!products.data?.length) {
+		return <h2 style={{ textAlign: "center" }}>No Products Found </h2>;
+	}
 	return (
 		<ProductsView
 			title="Products page title"

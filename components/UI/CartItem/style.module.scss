@@ -1,0 +1,12 @@
+@import "../../../styles/abstracts/variables";
+.cart__item_wrapper {
+	padding: 1rem;
+	border-radius: $br-rounded;
+	border: $br-1;
+
+	.image__wrapper {
+		image {
+			object-fit: contain !important;
+		}
+	}
+}
