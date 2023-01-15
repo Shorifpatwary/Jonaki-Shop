@@ -1,14 +1,14 @@
 import React from "react";
-import style from "@/UiComponent/Logo/logo.module.scss";
+import Style from "./Style/module.scss";
 import Image from "next/image";
 import logo from "@/public/logo.png";
 import Link from "next/link";
 const Logo = ({ name = "logo", className = "", ...props }) => {
 	return (
-		<Link href="/" className={` flex__start ${style.logo__main} ${className}`}>
+		<Link href="/" className={` flex__start ${Style.logo__main} ${className}`}>
 			<Image
 				id={name}
-				className={`${style.logo__main} ${className}`}
+				className={`${Style.logo__main} ${className}`}
 				{...props}
 				alt="Jonaki online shop"
 				src={logo}
@@ -19,5 +19,4 @@ const Logo = ({ name = "logo", className = "", ...props }) => {
 		</Link>
 	);
 };
-
 export default Logo;

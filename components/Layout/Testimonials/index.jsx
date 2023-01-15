@@ -27,7 +27,6 @@ const responsive = {
 const Testimonials = ({ testimonial }) => {
 	const title = testimonial.title;
 	const testimonials = testimonial.testimonials;
-	console.log(testimonials, "from testimonials");
 	return (
 		<Section
 			name="testimonial__section"
