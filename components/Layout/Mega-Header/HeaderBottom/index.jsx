@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { MobileMenu } from "@/layoutComponent/Mega-Header";
 
 import Div from "@/Tags/Div";
-import { categoryBurgerIcon, bottomArrow, mobileMenu } from "@/public/images";
-import Categories from "../../../UI/CategoriesMenu";
 import { HeaderData } from "..";
 import NavLinks from "@/UiComponent/NavLinks";
 const HeaderBottom = () => {
