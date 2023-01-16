@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "@/components/UI/section";
+import Section from "@/UiComponent/Section";
 const Profile = () => {
 	return (
 		<Section name="profile__page">

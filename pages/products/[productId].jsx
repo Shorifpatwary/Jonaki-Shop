@@ -3,7 +3,7 @@ import Head from "next/head";
 import { CartContext } from "@/tools/Context/cartProvider";
 
 import P3 from "@/UiComponent/Tags/P/P3";
-import Section from "@/UiComponent/section";
+import Section from "@/UiComponent/Section";
 import SingleProductImage from "@/UiComponent/SingleProductImage";
 import H1 from "@/UiComponent/Tags/Heading/H1";
 import LabelAndText from "@/UiComponent/LabelAndText/index.tsx";
