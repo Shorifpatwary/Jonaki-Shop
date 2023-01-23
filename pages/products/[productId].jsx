@@ -53,10 +53,10 @@ const productsPage = ({ product }) => {
 			<Section name="single__product">
 				{/* product view card /  image and product details */}
 				<div className="product__view-card row gap__1">
-					<div className="col__4">
+					<div className="col__4 col__bp3-10">
 						<SingleProductImage productImages={product.assets} />
 					</div>
-					<div className="col__4 flex__column-start gap__2">
+					<div className="col__4 col__bp3-10 flex__column-start gap__2">
 						<div className="title">
 							<H1>{product.name}</H1>
 						</div>

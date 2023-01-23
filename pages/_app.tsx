@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import AuthProvider from "@/tools/Context/authProvider";
+
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 
@@ -58,12 +60,14 @@ const App = ({ Component, pageProps }: AppProps) => {
 				{/* using nprogress for loading   */}
 				{/* <Loading /> */}
 				{/* Header */}
-				<CartProvider>
-					<MegaHeader />
-					<Component {...pageProps} />
-					{/* <ErrorBoundary> */}
-					<Footer />
-				</CartProvider>
+				<AuthProvider>
+					<CartProvider>
+						<MegaHeader />
+						<Component {...pageProps} />
+						{/* <ErrorBoundary> */}
+						<Footer />
+					</CartProvider>
+				</AuthProvider>
 				{/* </ErrorBoundary> */}
 			</ErrorBoundary>
 		</>

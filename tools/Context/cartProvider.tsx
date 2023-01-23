@@ -125,13 +125,15 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
 	};
 	// cart item remove handler
 	const removeAllCartItems = async () => {
-		console.log("remove all cart items ");
 		// return;
 		try {
-			const res = await fetch(`https://api.chec.io/v1/carts/${cartData?.id}`, {
-				method: "DELETE",
-				headers: headers,
-			});
+			const res = await fetch(
+				`https://api.chec.io/v1/carts/${cartData?.id}/items`,
+				{
+					method: "DELETE",
+					headers: headers,
+				}
+			);
 			const data = await res.json();
 			setCartData(data);
 		} catch (error) {
@@ -139,9 +141,11 @@ const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
 		}
 	};
 	// REACT HOOKS
-
 	useEffect(() => {
-		if (!localStorage.getItem("cartId")) {
+		if (
+			!localStorage.getItem("cartId") ||
+			localStorage.getItem("cartId") === "undefined"
+		) {
 			// Create a cart
 			getCart();
 		} else {

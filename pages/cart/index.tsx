@@ -11,6 +11,7 @@ import Button from "@/UiComponent/Tags/Button";
 const CartPage = () => {
 	const { cartData, itemUpdateHandler, itemRemoveHandler, removeAllCartItems } =
 		useContext(CartContext);
+
 	if (cartData?.total_unique_items < 1 || null) {
 		return (
 			<Section name="cart__page">

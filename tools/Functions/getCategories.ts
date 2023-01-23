@@ -1,5 +1,3 @@
-import { NextApiRequest, NextApiResponse } from "next";
-
 interface Category {
 	data: [
 		{
@@ -44,7 +42,6 @@ async function getCategories(
 			headers: headers,
 		});
 		const categories: Category[] = await res.json();
-		console.log(categories, "from main function file .ts file ");
 		return categories;
 	} catch (error) {
 		console.log(error);

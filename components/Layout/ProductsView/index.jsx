@@ -14,6 +14,9 @@ import ListPagination from "@/components/UI/ListPagination";
 const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 	// router object
 	const router = useRouter();
+	if (router.query.query) {
+		title = `Showing result from : ${router.query.query}`;
+	}
 
 	const pagination = products.meta.pagination;
 
@@ -30,6 +33,10 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 	// ======== FUNCTIONS ==========
 	// handle price change function
 	const handlePriceChange = (value, inputName) => {
+		// return when value is less then zero 0 ;
+		if (value < 0) {
+			return;
+		}
 		// set min price and max price defends on input name.
 		if (inputName === "min") {
 			setMinPrice(value);
@@ -40,6 +47,8 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 	// category handle change functions
 	const handleChange = (e) => {
 		const changedValue = e.target.value;
+		// set initial page
+		setCurrentPage(1);
 		if (filter_categories.includes(changedValue)) {
 			// remove this item
 			setFilter_categories(
@@ -84,7 +93,7 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 
 	return (
 		<main>
-			<div className="product__page-header ">
+			<div className="product__page-header">
 				<div className="header__page-info flex__center-sb gap__3">
 					<div className="title col__6">
 						<H3>{title}</H3>
@@ -102,6 +111,7 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 			<Section>
 				<Div className="content flex__center-sb gap__2 w__10">
 					{/* filter bar  */}
+					{/* hide this filter bar for mobile and appear as modal  */}
 					<aside className="filter__bar flex__column-start col__2">
 						{/* form */}
 						<form onSubmit={handleSubmit} className="filter__categories ">

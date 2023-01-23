@@ -1,37 +1,56 @@
 import React, { useEffect, useState } from "react";
-
-const useFetch = (
+type HTTPMethod = "GET" | "POST" | "PUT" | "DELETE";
+// <T extends HTTPMethod = "GET"> || avoiding default value for auto suggestion
+interface UseFetchType {
+	<T extends HTTPMethod>(
+		url: string,
+		method: T,
+		body?: {},
+		headers?: { [key: string]: any }
+	): {
+		data: {};
+		error: string;
+		isLoading: boolean;
+		isError: boolean;
+	};
+}
+const useFetch: UseFetchType = (
 	url,
-	method = "GET",
+	method,
+	body,
 	headers = {
 		Accept: "application/json",
 		"Content-Type": "application/json",
 	}
 ) => {
 	const [data, setData] = useState({});
-	const [error, setError] = useState({});
-	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState<string>("");
+	const [isLoading, setLoading] = useState<boolean>(false);
+	const [isError, setIsError] = useState<boolean>(false);
 	// fetch function
 	const fetchAPI = async () => {
+		setLoading(true);
+		setIsError(false);
 		try {
 			const response = await fetch(url, {
 				method: method,
 				headers: headers,
+				body: JSON.stringify(body),
 			});
 			const data = await response.json();
 			setData(data);
 		} catch (error) {
-			setError(error);
+			setError(error as string);
+			setIsError(true);
 		} finally {
 			setLoading(false);
 		}
 	};
 	useEffect(() => {
-		setLoading(true);
 		fetchAPI();
 	}, [url]);
 
-	return { data, error, loading };
+	return { data, error, isLoading, isError };
 };
 export default useFetch;
 /**

@@ -16,12 +16,10 @@ class Sliders extends Component {
 	};
 
 	moveCarousel = (offset) => {
-		console.log(this.carousel, "from carousel ");
 		this.carousel.style.transform = `translateX(${offset}px)`;
 	};
 
 	handleCarouselMotion = (distance) => {
-		console.log(this.state, "this.state ");
 		this.setState(
 			(prevState) => ({ offset: prevState.offset + distance }),
 			() => {
