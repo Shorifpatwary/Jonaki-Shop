@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Div from "@/components/UI/Tags/Div";
 import H4 from "@/components/UI/Tags/Heading/H4";
 import H6 from "@/components/UI/Tags/Heading/H6";
 import P3 from "@/components/UI/Tags/P/P3";
@@ -13,7 +12,7 @@ const Banner = ({ category = [] }) => {
 	const description = item.description.slice(0, 210) + "...";
 
 	return (
-		<Div className="banner__wrapper ">
+		<div className="banner__wrapper ">
 			<Image
 				src={item.assets[0].url}
 				// width={400}
@@ -30,8 +29,8 @@ const Banner = ({ category = [] }) => {
 					// backdropFilter: " brightness(50%)",
 				}}
 			/>
-			<Div className="banner__row flex__column-start gap__2">
-				<Div className="text">
+			<div className="banner__row flex__column-start gap__2">
+				<div className="text">
 					<H6 className="subtitle">
 						{`Special ${name || "Banner"} Products`}{" "}
 					</H6>
@@ -40,16 +39,16 @@ const Banner = ({ category = [] }) => {
 						{description ||
 							"Lorem ipsum dolor sit amet consectetur, adipisicing elit."}
 					</P3>
-				</Div>
-				<Div className="call__to-action">
+				</div>
+				<div className="call__to-action">
 					<Link href={item.slug ? item.slug : "/category"}>
 						<Button variant="outline" icon="append">
 							Read More
 						</Button>
 					</Link>
-				</Div>
-			</Div>
-		</Div>
+				</div>
+			</div>
+		</div>
 	);
 };
 

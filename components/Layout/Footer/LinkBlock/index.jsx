@@ -1,19 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-import Div from "@/components/UI/Tags/Div";
 import style from "@/layoutComponent/Footer/LinkBlock/style.module.scss";
 import H4 from "@/Tags/Heading/H4";
 const FooterLinkBlock = ({ className = "hello", title = "", links = [] }) => {
 	return (
-		<Div
+		<div
 			className={`${style.footerLinkBlock}  ${className} flex__column-start gap__2`}
 		>
-			<Div className="title">
+			<div className="title">
 				<H4>{title}</H4>
-			</Div>
+			</div>
 			{/* links */}
-			<Div className="links flex__column-start gap__2">
+			<div className="links flex__column-start gap__2">
 				{links.map((link) => {
 					return (
 						<Link key={link.url + link.text} href={`${link.url}`}>
@@ -21,8 +20,8 @@ const FooterLinkBlock = ({ className = "hello", title = "", links = [] }) => {
 						</Link>
 					);
 				})}
-			</Div>
-		</Div>
+			</div>
+		</div>
 	);
 };
 

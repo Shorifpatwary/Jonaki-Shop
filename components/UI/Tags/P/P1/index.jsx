@@ -1,5 +1,4 @@
-import React from "react";
-import style from "@/Tags/P/P1/style.module.scss";
+import style from "./style.module.scss";
 const P1 = ({ className = "", children, TagName = "p", ...props }) => {
 	return (
 		<TagName className={`${style.P} ${className}`} {...props}>

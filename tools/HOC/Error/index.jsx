@@ -1,5 +1,5 @@
-import React from "react";
-class ErrorBoundary extends React.Component {
+import { Component } from "react";
+class ErrorBoundary extends Component {
 	constructor(props) {
 		super(props);
 

@@ -3,7 +3,6 @@ import Carousel from "react-multi-carousel";
 
 import Style from "./style.module.scss";
 import Section from "@/UiComponent/Section";
-import Div from "@/UiComponent/Tags/Div";
 import H4 from "@/UiComponent/Tags/Heading/H4";
 import Button from "@/UiComponent/Tags/Button";
 import TestimonialCard from "@/layoutComponent/Testimonials/TestimonialCard";
@@ -33,12 +32,12 @@ const Testimonials = ({ testimonial }) => {
 			className={`${Style.testimonial__section} gap__1`}
 			rowClassName={`${Style.testimonial__section_row}`}
 		>
-			<Div className={`${Style.section__head} flex__center-sb w__10 `}>
+			<div className={`${Style.section__head} flex__center-sb w__10 `}>
 				<H4>{title || "Section Title "}</H4>
 				<Button variant="outline" size="sm" icon="append">
 					Button
 				</Button>
-			</Div>
+			</div>
 			<Carousel
 				responsive={responsive}
 				swipeable={true}

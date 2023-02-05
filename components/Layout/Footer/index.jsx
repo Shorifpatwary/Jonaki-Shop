@@ -1,7 +1,6 @@
 import React from "react";
 import data from "@/public/data/data.json";
 import Section from "@/UiComponent/Section";
-import Div from "@/Tags/Div";
 import H4 from "@/Tags/Heading/H4";
 import PillPrimary from "@/UiComponent/Pill/Primary";
 import P2 from "@/Tags/P/P2";
@@ -14,7 +13,7 @@ const Footer = () => {
 	const tags = footer.product_tags.tags;
 	return (
 		<Section TagName="footer" className="footer__wrapper ">
-			<Div className="footer__top footer__links row gap__2 ">
+			<div className="footer__top footer__links row gap__2 ">
 				{footer.link.map((block) => (
 					<FooterLinkBlock
 						key={block.title + block.links + Id++}
@@ -22,23 +21,23 @@ const Footer = () => {
 						links={block.links}
 					/>
 				))}
-			</Div>
+			</div>
 			{/* Footer tag  */}
-			<Div className="footer__tag flex__column-start w__10 gap__2">
-				<Div className="title w__10">
+			<div className="footer__tag flex__column-start w__10 gap__2">
+				<div className="title w__10">
 					<H4> {tag_title} </H4>
-				</Div>
-				<Div className="flex__start w__10 gap__2  wrap">
+				</div>
+				<div className="flex__start w__10 gap__2  wrap">
 					{tags.map((tag) => {
 						return <PillPrimary>{tag}</PillPrimary>;
 					})}
-				</Div>
-			</Div>
+				</div>
+			</div>
 			{/* Footer bottom / copyright footer  */}
 
-			<Div className="footer__copyright w__10">
+			<div className="footer__copyright w__10">
 				<P2>{footer.text}</P2>
-			</Div>
+			</div>
 		</Section>
 	);
 };

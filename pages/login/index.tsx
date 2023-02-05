@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import Link from "next/link";
 import { AuthContext } from "@/tools/Context/authProvider";
 import Cookies from "js-cookie";

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import Link from "next/link";
 import { AuthContext } from "@/tools/Context/authProvider";
 
@@ -111,13 +111,11 @@ const Registration = () => {
 			setMessage({ message: error.message, status: false });
 		}
 	};
-
 	const submit = (form: formDataType) => {
 		if (!validateForm(form)) return;
 		// send data to the server for create account
 		createUser(form);
 	};
-
 	return (
 		<Section name="registration">
 			<div className="pad__6">

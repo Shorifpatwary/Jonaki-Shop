@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Div from "@/Tags/Div";
 import MenuItems from "../NestedMenu";
 const CategoriesMenu = () => {
 	const [data, setData] = useState([]);
@@ -25,9 +24,9 @@ const CategoriesMenu = () => {
 	}, []);
 
 	return (
-		<Div className="categories">
+		<div className="categories">
 			<MenuItems menuItems={data.data} />
-		</Div>
+		</div>
 	);
 };
 

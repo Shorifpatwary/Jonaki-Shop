@@ -1,5 +1,4 @@
-import React from "react";
-import style from "@/Tags/Button/style.module.scss";
+import style from "./style.module.scss";
 import { RightArrow } from "@/public/images";
 /**
  *

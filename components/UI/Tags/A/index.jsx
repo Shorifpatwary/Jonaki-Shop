@@ -1,8 +1,7 @@
-import React from "react";
-import style from "@/Tags/A/style.module.scss";
+import Style from "./style.module.scss";
 const A = ({ className = "", children, ...props }) => {
 	return (
-		<a className={`${style.A} ${className}`} {...props}>
+		<a className={`${Style.A} ${className}`} {...props}>
 			{children}
 		</a>
 	);

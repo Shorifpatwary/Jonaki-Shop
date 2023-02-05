@@ -1,4 +1,3 @@
-import React from "react";
 import getCategories from "@/tools/Functions/getCategories";
 import ProductsView from "@/layoutComponent/ProductsView";
 

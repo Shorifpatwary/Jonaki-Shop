@@ -1,4 +1,3 @@
-import React from "react";
 import BtnPrimary from "@/Tags/Button/Primary";
 import H1 from "@/Tags/Heading/H1";
 import H2 from "@/Tags/Heading/H2";

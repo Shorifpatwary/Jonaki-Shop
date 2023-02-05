@@ -5,7 +5,7 @@ import { Link } from "next/link";
 
 const MenuItems = ({ items, depthLevel }) => {
 	const [dropdown, setDropdown] = useState(false);
-
+	console.log(items, "items llsdkfsldfkjsldfkj sldkj");
 	let ref = useRef();
 
 	useEffect(() => {

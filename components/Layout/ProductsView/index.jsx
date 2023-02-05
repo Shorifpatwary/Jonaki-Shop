@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import Section from "@/UiComponent/Section";
 import BreadCrumbs from "@/UiComponent/BreadCrumbs/index.tsx";
-import Div from "@/UiComponent/Tags/Div";
+
 import H3 from "@/UiComponent/Tags/Heading/H3";
 import ProductCard from "@/UiComponent/ProductCard";
 import Filter_cat_item from "@/UiComponent/Filter_cat_item";
@@ -109,14 +109,14 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 			</div>
 			{/* filter bar and products  */}
 			<Section>
-				<Div className="content flex__center-sb gap__2 w__10">
+				<div className="content flex__center-sb gap__2 w__10">
 					{/* filter bar  */}
 					{/* hide this filter bar for mobile and appear as modal  */}
 					<aside className="filter__bar flex__column-start col__2">
 						{/* form */}
 						<form onSubmit={handleSubmit} className="filter__categories ">
 							<H3>Categories</H3>
-							<Div className="categories">
+							<div className="categories">
 								{categories.data.map((category) => (
 									<Filter_cat_item
 										key={category.id}
@@ -127,11 +127,11 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 										products={category.products}
 									/>
 								))}
-							</Div>
+							</div>
 							{/* price filter  */}
-							<Div className="flex__column-start gap__1 filter__price-box">
+							<div className="flex__column-start gap__1 filter__price-box">
 								<H3>Price</H3>
-								<Div className="price__input-box flex__center-sb gap__1">
+								<div className="price__input-box flex__center-sb gap__1">
 									<PriceInput
 										label="Min"
 										value={minPrice}
@@ -143,21 +143,21 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 										value={maxPrice}
 										onChange={handlePriceChange}
 									/>
-								</Div>
-							</Div>
+								</div>
+							</div>
 							<ButtonPrimary type="submit" className="price__button">
 								Filter
 							</ButtonPrimary>
 						</form>
 					</aside>
-					<Div className="products__wrapper col__7  row gap__1">
+					<div className="products__wrapper col__7  row gap__1">
 						{products.data.map((product) => (
-							<Div className="col__3 col__4 col__10">
+							<div key={product.id} className="col__3 col__4 col__10 ">
 								<ProductCard product={product} />
-							</Div>
+							</div>
 						))}
-					</Div>
-				</Div>
+					</div>
+				</div>
 				{/* list pagination  */}
 				<ListPagination
 					currentPath={router.asPath}

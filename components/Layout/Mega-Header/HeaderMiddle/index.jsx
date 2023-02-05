@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { MobileMenu } from "@/layoutComponent/Mega-Header";
 import { CartContext } from "@/tools/Context/cartProvider";
-import Div from "@/Tags/Div";
 
 import Link from "next/link";
 import { userIcon, cartIcon, mobileMenu } from "@/public/images";
@@ -24,17 +23,17 @@ const HeaderMiddle = () => {
 	// }, []);
 
 	return (
-		<Div className="header___middle flex__center-sb w__10 gap__3 wrap__bp4">
+		<div className="header___middle flex__center-sb w__10 gap__3 wrap__bp4">
 			{/* logo */}
-			<Div className="header__logo col__1">
+			<div className="header__logo col__1">
 				<Logo />
-			</Div>
+			</div>
 			{/* search bar  */}
-			<Div className="search__container col__5 col__bp4-9">
+			<div className="search__container col__5 col__bp4-9">
 				<SearchBox />
-			</Div>
+			</div>
 			{/* user cart and profile  */}
-			<Div className="user__actions flex__end gap__2 col__1 ">
+			<div className="user__actions flex__end gap__2 col__1 ">
 				{/* /${Cookies.get("customerId")} */}
 				<Link href={`/profile`} className="userIcon">
 					<img src={userIcon.src} alt="React Logo" />
@@ -47,17 +46,17 @@ const HeaderMiddle = () => {
 							: cartData?.total_items}
 					</span>
 				</Link>
-			</Div>
+			</div>
 			{/* mobile menu icon  */}
-			<Div className={`mobile__hamburger hide  flex__column-center`}>
+			<div className={`mobile__hamburger hide  flex__column-center`}>
 				<img
 					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 					src={mobileMenu.src}
 					alt="mobile menu icon "
 					className={` ${isMobileMenuOpen ? "rotate__180" : ""}`}
 				/>
-			</Div>
-		</Div>
+			</div>
+		</div>
 	);
 };
 export default React.memo(HeaderMiddle);

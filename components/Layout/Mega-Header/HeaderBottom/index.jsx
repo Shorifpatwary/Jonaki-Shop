@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { MobileMenu } from "@/layoutComponent/Mega-Header";
 
-import Div from "@/Tags/Div";
 import { HeaderData } from "..";
 import NavLinks from "@/UiComponent/Navlinks";
 const HeaderBottom = () => {
@@ -17,24 +16,24 @@ const HeaderBottom = () => {
 				onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 			>
 				{/* all category */}
-				{/* <Div className="category flex__center gap__2 col__2 ">
-				<Div className="categoriesIcon">
+				{/* <div className="category flex__center gap__2 col__2 ">
+				<div className="categoriesIcon">
 					<img src={categoryBurgerIcon.src} alt="categories icon " />
-				</Div>
+				</div>
 
-				<Div className="categoriesText">
+				<div className="categoriesText">
 					<span>All Categories</span>{" "}
 					<img src={bottomArrow.src} alt="bottom arrow icon" />
-				</Div>
+				</div>
 				<Categories /> 
-			</Div> */}
-				<Div className="page__links col__8">
+			</div> */}
+				<div className="page__links col__8">
 					<NavLinks
 						pages={pages}
 						ulClassName="header__links"
 						liClassName="header__link_item"
 					/>
-				</Div>
+				</div>
 			</nav>
 		</>
 	);

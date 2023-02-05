@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import style from "./style.module.scss";
 import { searchIcon, selectArrow } from "@/public/images";
-import Div from "../Tags/Div";
 
 // category items. ... will be dynamic
 const categories = [
@@ -46,10 +45,10 @@ const SearchBox = ({ className = "", ...props }) => {
 		}
 	};
 	return (
-		<Div className={`${style.SearchBox} ${className}`} {...props}>
-			<Div className="search__box-group flex__center-sb gap__2">
+		<div className={`${style.SearchBox} ${className}`} {...props}>
+			<div className="search__box-group flex__center-sb gap__2">
 				{/* category select */}
-				<Div
+				<div
 					className={` ${style.select} flex__center-sb gap__1`} //w__2
 					onClick={() => setIsOptionsOpen((prev) => !prev)}
 				>
@@ -70,9 +69,9 @@ const SearchBox = ({ className = "", ...props }) => {
 							</li>
 						))}
 					</ul>
-				</Div>
+				</div>
 				{/* search input  w__4  */}
-				<Div className={` ${style.search} grow shrink`}>
+				<div className={` ${style.search} grow shrink`}>
 					<input
 						className="w__10"
 						type="search"
@@ -80,19 +79,19 @@ const SearchBox = ({ className = "", ...props }) => {
 						onChange={(e) => setSearchTerm(e.target.value)}
 						placeholder="Search Products"
 					/>
-				</Div>
+				</div>
 				<button
 					onClick={(e) => handleSubmit(e)}
 					className={`w__1 ${style.searchIcon}`}
 				>
 					<img src={searchIcon.src} alt="search icon" />
 				</button>
-			</Div>
+			</div>
 			{/* mobile search  */}
-			{/* <Div className="mobile__search  ">
+			{/* <div className="mobile__search  ">
 				<img src={searchIcon.src} alt="search icon" />
-			</Div> */}
-		</Div>
+			</div> */}
+		</div>
 	);
 };
 export default SearchBox;

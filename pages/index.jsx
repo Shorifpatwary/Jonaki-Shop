@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import data from "@/public/data/data.json";
 
@@ -6,7 +5,6 @@ import Banner from "@/layoutComponent/Banner";
 import Testimonials from "@/layoutComponent/Testimonials";
 import Section from "@/UiComponent/Section";
 
-import Div from "@/components/UI/Tags/Div";
 import H4 from "@/UiComponent/Tags/Heading/H4";
 import Button from "@/UiComponent/Tags/Button";
 import ProductCard from "@/UiComponent/ProductCard";
@@ -41,86 +39,86 @@ const Home = ({
 			<main className="home__wrapper">
 				{/* home category with banner section */}
 				<Section name="home__banner" className="home__banner-wrapper">
-					<Div className="row gap__2">
+					<div className="row gap__2">
 						{/* category block  */}
-						<Div className="col__2  col__bp5-10 ">
+						<div className="col__2  col__bp5-10 ">
 							<CategoriesBlock
 								title="Category menu"
 								categories={bannerCategories}
 							/>
-						</Div>
+						</div>
 						{/* banner  */}
-						<Div className="col__3 col__bp3-4 col__bp5-10 ">
+						<div className="col__3 col__bp3-4 col__bp5-10 ">
 							<Banner category={bannerOneCategory} />
-						</Div>
-						<Div className="col__3 col__bp3-4 col__bp5-10">
+						</div>
+						<div className="col__3 col__bp3-4 col__bp5-10">
 							<Banner category={bannerTwoCategory} />
-						</Div>
-					</Div>
+						</div>
+					</div>
 				</Section>
 				{/* Best selling products */}
 				<Section
 					name="best__selling-products"
 					className="best__selling-products-wrapper"
 				>
-					<Div className=" row gap__1">
+					<div className=" row gap__1">
 						{/* category block  */}
-						<Div className="col__2 col__bp3-4 col__bp5-10">
+						<div className="col__2 col__bp3-4 col__bp5-10">
 							<CategoriesBlock
 								title="Best selling products"
 								categories={bestSellingCategories}
 							/>
-						</Div>
+						</div>
 						{/* best selling  products */}
 						{bestSellingProducts.map((product) => (
-							<Div className="col__2 col__bp3-4 col__bp5-10">
+							<div className="col__2 col__bp3-4 col__bp5-10">
 								<ProductCard product={product} />
-							</Div>
+							</div>
 						))}
-					</Div>
+					</div>
 				</Section>
 				{/* Best from babies */}
 				<Section
 					name="best__selling-products"
 					className="best__selling-products-wrapper"
 				>
-					<Div className=" row gap__1">
+					<div className=" row gap__1">
 						{/* category block  */}
-						<Div className="col__2 col__bp3-4 col__bp5-10">
+						<div className="col__2 col__bp3-4 col__bp5-10">
 							<CategoriesBlock
 								title="Best from Babies"
 								categories={bestFromBabiesCategory}
 							/>
-						</Div>
+						</div>
 						{/* best selling  products */}
 						{bestFromBabiesProducts.map((product) => (
-							<Div className="col__2 col__bp3-4 col__bp5-10">
+							<div className="col__2 col__bp3-4 col__bp5-10">
 								<ProductCard product={product} />
-							</Div>
+							</div>
 						))}
-					</Div>
+					</div>
 				</Section>
 				{/* testimonials section in Home page  */}
 				<Testimonials testimonial={data.testimonial} />
 				{/* special products || Section Headline */}
 				<Section name="special__products" className="Section Headline">
-					<Div className="special__section-wrapper flex__column-center w__10 gap__3">
-						<Div className="section__head row">
+					<div className="special__section-wrapper flex__column-center w__10 gap__3">
+						<div className="section__head row">
 							{/* special products heading with button  */}
 							<H4>Special Products</H4>
 							<Button variant="outline" size="sm" icon="append">
 								Button
 							</Button>
-						</Div>
+						</div>
 						{/* products  */}
-						<Div className="row gap__2">
+						<div className="row gap__2">
 							{specialProducts.map((product) => (
-								<Div className="col__2 col__bp3-4 col__bp5-10 ">
+								<div className="col__2 col__bp3-4 col__bp5-10 ">
 									<ProductCard product={product} />
-								</Div>
+								</div>
 							))}
-						</Div>
-					</Div>
+						</div>
+					</div>
 				</Section>
 			</main>
 		</>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Link from "next/link";
 
 import Section from "@/UiComponent/Section";
@@ -47,4 +47,3 @@ const CartPage = () => {
 	}
 };
 export default CartPage;
-// to do if cart line item === 0 . "show massage about this "
