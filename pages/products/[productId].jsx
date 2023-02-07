@@ -25,7 +25,13 @@ const productsPage = ({ product }) => {
 	const handleAddToCart = (productId) => {
 		addItemToCart(productId, productOrderAmount);
 	};
-
+	if (!product) {
+		<>
+			<Section className="text__red">
+				<h2>No Product Found</h2>
+			</Section>
+		</>;
+	}
 	return (
 		<>
 			<Head lang="en">
@@ -117,6 +123,7 @@ const productsPage = ({ product }) => {
 		</>
 	);
 };
+
 // next js server side site generation function
 export async function getServerSideProps(context) {
 	// header
@@ -144,4 +151,5 @@ export async function getServerSideProps(context) {
 		},
 	};
 }
-export default React.memo(productsPage);
+
+export default productsPage;

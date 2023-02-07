@@ -1,20 +1,12 @@
 import React, { useState } from "react";
+import categoriesData from "@/public/data/categories.json";
+
 import { useRouter } from "next/router";
 import style from "./style.module.scss";
 import { searchIcon, selectArrow } from "@/public/images";
 
 // category items. ... will be dynamic
-const categories = [
-	"All Categories",
-	"Bakery",
-	"Fruit and vegetables",
-	"Meat and fish",
-	"Meat and fish",
-	"Meat and fish",
-	"Meat and fish",
-	"Meat and fish",
-	"Meat and fish",
-];
+const categories = categoriesData.data;
 
 const SearchBox = ({ className = "", ...props }) => {
 	const router = useRouter();
@@ -22,7 +14,6 @@ const SearchBox = ({ className = "", ...props }) => {
 	const [category, setCategory] = useState("All Categories");
 	const [searchTerm, setSearchTerm] = useState("");
 	const [isOptionsOpen, setIsOptionsOpen] = useState(false);
-
 	// handle submit button
 	const handleSubmit = (e) => {
 		// e.preventDefault();
@@ -60,12 +51,12 @@ const SearchBox = ({ className = "", ...props }) => {
 					>
 						{categories.map((categoryItem) => (
 							<li
-								key={categoryItem}
+								key={categoryItem.id}
 								className="dropdown__item"
-								onClick={(e) => setCategory(e.target.innerText)}
-								value={categoryItem}
+								onClick={(e) => setCategory(categoryItem.name)}
+								value={categoryItem.name}
 							>
-								<span>{categoryItem}</span>
+								<span>{categoryItem.name}</span>
 							</li>
 						))}
 					</ul>

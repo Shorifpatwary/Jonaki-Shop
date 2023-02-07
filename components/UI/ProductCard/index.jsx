@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { memo } from "react";
 import Image from "next/image";
 import style from "./style.module.scss";
 import BtnPrimary from "@/UiComponent/Tags/Button/Primary";
@@ -17,8 +17,6 @@ const ProductCard = ({ product }) => {
 					src={product.image?.url}
 					width={235}
 					height={180}
-					// placeholder={productPlaceholder}
-					placeholder="https://via.placeholder.com/235x180.png?text=Product+Image"
 					alt={product.name}
 				/>
 			</div>
@@ -56,4 +54,4 @@ const ProductCard = ({ product }) => {
 	);
 };
 
-export default React.memo(ProductCard);
+export default memo(ProductCard);

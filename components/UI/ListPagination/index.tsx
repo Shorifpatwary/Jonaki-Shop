@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import Style from "./style.module.scss";
 import ButtonPrimary from "@/UiComponent/Tags/Button/Primary";
 import Button from "@/UiComponent/Tags/Button";
@@ -55,4 +55,4 @@ const ListPagination = ({
 	);
 };
 
-export default ListPagination;
+export default memo(ListPagination);

@@ -22,6 +22,25 @@
 			{ "text": "FAQ", "url": "/faq" }
 		]
 	},
+	"categories": [
+		{
+			"assets": [
+				{
+					"created_at": 1668775356,
+					"description": null,
+					"file_extension": "png",
+					"file_size": 455671,
+					"filename": "Baby.png",
+					"id": "ast_NqKE50GAx3odgB",
+					"image_dimensions": { "width": 803, "height": 1000 },
+					"is_image": true,
+					"meta": [],
+					"updated_at": 1668775360,
+					"url": "https://cdn.chec.io/merchants/48532/assets/tSSn36iGPl882JSe|Baby.png"
+				}
+			]
+		}
+	],
 	"testimonial": {
 		"title": "Our customers says",
 		"testimonials": [

@@ -1,6 +1,11 @@
 import Head from "next/head";
 import data from "@/public/data/data.json";
 
+import categories from "@/public/data/categories.json";
+import babiesCategories from "@/public/data/Home-page-data/babies-categories.json";
+import babiesProducts from "@/public/data/Home-page-data/babies-products.json";
+import products from "@/public/data/Home-page-data/products.json";
+
 import Banner from "@/layoutComponent/Banner";
 import Testimonials from "@/layoutComponent/Testimonials";
 import Section from "@/UiComponent/Section";
@@ -18,6 +23,7 @@ const Home = ({
 	babiesProducts = [],
 }) => {
 	let originalCategories = categories.data;
+
 	let bannerCategories = ArraySlicer(originalCategories, 5);
 	let bestSellingProducts = ArraySlicer(products.data, 3);
 	let specialProducts = ArraySlicer(products.data, 4);
@@ -26,7 +32,7 @@ const Home = ({
 
 	let bannerOneCategory = bannerCategories[0];
 	let bannerTwoCategory = bannerCategories[1];
-	// make this categories reverse and push it to be selling category section . because there is no way to find best selling categories .
+	// make this categories reverse and push it to the selling category section . because there is no way to find best selling categories .
 	let reverseCategories = originalCategories.reverse();
 	let bestSellingCategories = ArraySlicer(reverseCategories, 5);
 
@@ -127,48 +133,24 @@ const Home = ({
 
 // next js static site generation function
 export async function getStaticProps() {
-	const categoriesUrl = "https://api.chec.io/v1/categories";
-	const headers = {
-		"X-Authorization": process.env.NEXT_PUBLIC_PUBLIC_KEY_LIVE,
-		Accept: "application/json",
-		"Content-Type": "application/json",
-	};
+	// const headers = {
+	// 	"X-Authorization": process.env.NEXT_PUBLIC_PUBLIC_KEY_LIVE,
+	// 	Accept: "application/json",
+	// 	"Content-Type": "application/json",
+	// };
 
-	// categories request
-	const res = await fetch(categoriesUrl, {
-		method: "GET",
-		headers: headers,
-	});
-	const categories = await res.json();
 	// const { data, error, loading } = useFetch(categoriesUrl, headers);
 
 	// best selling products request
-	const productsRes = await fetch(
-		"https://api.chec.io/v1/products?limit=20&sortBy=sort_order",
-		{
-			method: "GET",
-			headers: headers,
-		}
-	);
-	const products = await productsRes.json();
-	// best from {farmer} or a specific category
-	const categoriesRes = await fetch(
-		"https://api.chec.io/v1/categories?parent_id=cat_gnZO5kmbKw7MNq",
-		{
-			method: "GET",
-			headers: headers,
-		}
-	);
-	const babiesCategories = await categoriesRes.json();
+	// const productsRes = await fetch(
+	// 	"https://api.chec.io/v1/products?limit=20&sortBy=sort_order",
+	// 	{
+	// 		method: "GET",
+	// 		headers: headers,
+	// 	}
+	// );
+	// const products = await productsRes.json();
 	// best from babies products request
-	const babiesProductsRes = await fetch(
-		"https://api.chec.io/v1/products?limit=20&sortBy=sort_order&category_id=cat_eN1ql9e1dlz3ym",
-		{
-			method: "GET",
-			headers: headers,
-		}
-	);
-	const babiesProducts = await babiesProductsRes.json();
 
 	return {
 		props: {

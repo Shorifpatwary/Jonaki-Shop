@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, memo } from "react";
 import { useRouter } from "next/router";
 
 import Section from "@/UiComponent/Section";
@@ -172,4 +172,4 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 	);
 };
 
-export default React.memo(ProductsView);
+export default memo(ProductsView);

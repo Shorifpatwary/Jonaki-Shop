@@ -1,5 +1,6 @@
-import getCategories from "@/tools/Functions/getCategories";
 import ProductsView from "@/layoutComponent/ProductsView";
+import categories from "@/public/data/categories.json";
+// import products from "../../public/data/Home-page-data/products.json";
 
 const productsPage = ({ categories, products }) => {
 	if (!products.data?.length) {
@@ -26,8 +27,7 @@ export async function getServerSideProps(context) {
 		Accept: "application/json",
 		"Content-Type": "application/json",
 	};
-	// categories request
-	const categories = await getCategories();
+
 	// products request
 	const productsRes = await fetch(
 		`https://api.chec.io/v1/products?${queryString}`,

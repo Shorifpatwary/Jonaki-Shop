@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import data from "@/public/data/data.json";
 import Section from "@/UiComponent/Section";
 import H4 from "@/Tags/Heading/H4";
@@ -41,4 +41,4 @@ const Footer = () => {
 		</Section>
 	);
 };
-export default Footer;
+export default memo(Footer);

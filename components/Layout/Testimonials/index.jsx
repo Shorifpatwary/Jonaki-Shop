@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import Carousel from "react-multi-carousel";
 
 import Style from "./style.module.scss";
@@ -66,4 +66,4 @@ const Testimonials = ({ testimonial }) => {
 	);
 };
 
-export default Testimonials;
+export default memo(Testimonials);

@@ -28,32 +28,34 @@ interface Category {
 	};
 }
 
-async function getCategories(
+async function getBabiesProducts(
 	headers: { [key: string]: string } = {
 		"X-Authorization": process.env.NEXT_PUBLIC_PUBLIC_KEY_LIVE as string,
 		Accept: "application/json",
 		"Content-Type": "application/json",
 	}
-): Promise<Category[]> {
+	// : Promise<Category[]>
+) {
 	try {
-		const categoriesUrl = "https://api.chec.io/v1/categories";
-
-		const res = await fetch(categoriesUrl, {
-			method: "GET",
-			headers: headers,
-		});
-		const categories: Category[] = await res.json();
+		const categoriesRes = await fetch(
+			"https://api.chec.io/v1/products?limit=20&sortBy=sort_order",
+			{
+				method: "GET",
+				headers: headers,
+			}
+		);
+		const babiesCategories: Category[] = await categoriesRes.json();
 		// Write the categories to a JSON file
 
 		fs.writeFileSync(
-			"./public/data/categories.json",
-			JSON.stringify(categories)
+			"./public/data/Home-page-data/products.json",
+			JSON.stringify(babiesCategories)
 		);
-		return categories;
+		// return babiesCategories;
 	} catch (error) {
 		console.log(error);
 		throw error;
 	}
 }
 
-export default getCategories;
+export default getBabiesProducts;

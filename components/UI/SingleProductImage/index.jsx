@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 
 import Image from "next/image";
 import Style from "./style.module.scss";
@@ -54,4 +54,4 @@ const SingleProductImage = ({ productImages }) => {
 	);
 };
 
-export default React.memo(SingleProductImage);
+export default memo(SingleProductImage);

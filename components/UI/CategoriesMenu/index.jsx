@@ -4,6 +4,7 @@ const CategoriesMenu = () => {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
+		console.log("categories menu console  ");
 		const url = "https://api.chec.io/v1/categories";
 		const headers = {
 			"X-Authorization": process.env.NEXT_PUBLIC_PUBLIC_KEY_LIVE,

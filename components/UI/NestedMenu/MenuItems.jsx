@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import Dropdown from "./Dropdown";
 
 import { Link } from "next/link";
 
 const MenuItems = ({ items, depthLevel }) => {
 	const [dropdown, setDropdown] = useState(false);
-	console.log(items, "items llsdkfsldfkjsldfkj sldkj");
 	let ref = useRef();
 
 	useEffect(() => {
@@ -94,4 +93,4 @@ const MenuItems = ({ items, depthLevel }) => {
 	);
 };
 
-export default MenuItems;
+export default memo(MenuItems);

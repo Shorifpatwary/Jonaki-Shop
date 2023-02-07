@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import CategoryList from "@/UiComponent/Lists/CategoryList";
 import H4 from "@/components/UI/Tags/Heading/H4";
 import Button from "@/UiComponent/Tags/Button";
@@ -24,4 +24,4 @@ const CategoriesBlock = ({
 	);
 };
 
-export default CategoriesBlock;
+export default memo(CategoriesBlock);

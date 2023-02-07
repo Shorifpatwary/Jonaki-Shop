@@ -1,3 +1,4 @@
+import {memo} from "react";
 import { useRouter, NextRouter } from "next/router";
 import Link from "next/link";
 import Li from "@/UiComponent/Tags/Li";
@@ -32,4 +33,4 @@ const BreadCrumbs = () => {
 	);
 };
 
-export default BreadCrumbs;
+export default memo(BreadCrumbs);

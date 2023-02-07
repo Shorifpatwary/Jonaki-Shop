@@ -35,13 +35,17 @@ const Banner = ({ category = [] }) => {
 						{`Special ${name || "Banner"} Products`}{" "}
 					</H6>
 					<H4 className="title">{` ${name || "Banner"} Products`} </H4>
-					<P3>
+					{/* <P3>
 						{description ||
 							"Lorem ipsum dolor sit amet consectetur, adipisicing elit."}
-					</P3>
+					</P3> */}
 				</div>
 				<div className="call__to-action">
-					<Link href={item.slug ? item.slug : "/category"}>
+					<Link
+						href={
+							item.slug ? `/products?category_slug=${item.slug}` : "/category"
+						}
+					>
 						<Button variant="outline" icon="append">
 							Read More
 						</Button>
