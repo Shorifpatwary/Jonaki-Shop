@@ -1,30 +1,13 @@
+const purgecss = require("@fullhuman/postcss-purgecss")({
+	content: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+	defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+});
+
 module.exports = {
 	plugins: [
-		"postcss-flexbugs-fixes",
-		[
-			"postcss-preset-env",
-			{
-				autoprefixer: { flexbox: "no-2009" },
-				stage: 3,
-				features: { "custom-properties": false },
-			},
-		],
+		require("postcss-import"),
+		require("tailwindcss"),
+		require("autoprefixer"),
+		...(process.env.NODE_ENV === "production" ? [purgecss] : []),
 	],
 };
-
-if (process.env.NODE_ENV === "production") {
-	module.exports.plugins.push([
-		"@fullhuman/postcss-purgecss",
-		{
-			content: [
-				"./src/**/*.{js,jsx,ts,tsx}",
-				"./pages/**/*.{js,jsx,ts,tsx}",
-				"./components/**/*.{js,jsx,ts,tsx}",
-			],
-			defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-			safelist: ["html", "body"],
-			ignore: ["*.module.s?(a|c)ss"],
-			keyframes: true,
-		},
-	]);
-}

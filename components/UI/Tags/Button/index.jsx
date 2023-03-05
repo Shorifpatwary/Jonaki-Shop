@@ -1,6 +1,7 @@
 import style from "./style.module.scss";
 import { RightArrow } from "@/public/images";
 /**
+ *
  * @param {String} variant || primary || outline || secondary
  * @param {String} size || md || lg || sm
  * @param {String} icon || append || prepend
@@ -19,7 +20,7 @@ const Button = ({
 }) => {
 	return (
 		<TagName
-			className={` flex__center  ${style[variant]} ${style[size]}  ${style.button_}  ${className}`}
+			className={` flex__center  ${style[variant]} ${style[size]}  ${style.Button__class}  ${className}`}
 			{...props}
 		>
 			{icon === "prepend" && (
