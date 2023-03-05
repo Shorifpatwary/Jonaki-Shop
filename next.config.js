@@ -1,9 +1,5 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-	content: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
-	defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-});
-
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	images: {
@@ -15,37 +11,36 @@ module.exports = {
 		],
 	},
 	typescript: {
+		// !! WARN !!
 		ignoreBuildErrors: true,
 	},
-	webpack5: (config, { isServer }) => {
-		if (!isServer) {
-			config.node = {
-				fs: "empty",
-			};
-		}
-
-		config.module.rules.push({
-			test: /\.scss$/,
-			use: [
-				"style-loader",
-				"css-loader",
-				{
-					loader: "postcss-loader",
-					options: {
-						postcssOptions: {
-							plugins: [
-								require("postcss-import"),
-								require("tailwindcss"),
-								require("autoprefixer"),
-								...(process.env.NODE_ENV === "production" ? [purgecss] : []),
-							],
-						},
-					},
-				},
-				"sass-loader",
-			],
-		});
-
-		return config;
-	},
 };
+module.exports = {
+	plugins: [
+		"postcss-flexbugs-fixes",
+		[
+			"postcss-preset-env",
+			{
+				autoprefixer: {
+					flexbox: "no-2009",
+				},
+				stage: 3,
+				features: {
+					"custom-properties": false,
+				},
+			},
+		],
+		[
+			"@fullhuman/postcss-purgecss",
+			{
+				content: [
+					"./pages/**/*.{js,jsx,ts,tsx}",
+					"./components/**/*.{js,jsx,ts,tsx}",
+				],
+				defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+				safelist: ["html", "body"],
+			},
+		],
+	],
+};
+module.exports = nextConfig;
