@@ -37,3 +37,8 @@
 
 // ===== PAGES ======
 @import "../styles/components/pages/pages";
+
+// Third party styling scss files.
+
+@import "../node_modules/nprogress/nprogress.css";
+@import "../node_modules/react-multi-carousel/lib/styles.css";

@@ -44,7 +44,7 @@ const ProductCard = ({ product }) => {
 						{/* <div className={`${style.old__price} `}>old price</div> */}
 					</div>
 					<div className={`${style.product__button} `}>
-						<Link href={`/product/${product.id}`}>
+						<Link href={`/products/${product.id}`}>
 							<BtnPrimary size="sm">Buy</BtnPrimary>
 						</Link>
 					</div>

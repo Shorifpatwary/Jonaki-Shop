@@ -150,9 +150,9 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 							</ButtonPrimary>
 						</form>
 					</aside>
-					<div className="products__wrapper col__7  row gap__1">
+					<div className="products__wrapper col__7  row gap__1 ">
 						{products.data.map((product) => (
-							<div key={product.id} className="col__3 col__4 col__10 ">
+							<div key={product.id} className="col__3">
 								<ProductCard product={product} />
 							</div>
 						))}

@@ -4,13 +4,9 @@ import { useRouter } from "next/router";
 import AuthProvider from "@/tools/Context/authProvider";
 
 import NProgress from "nprogress";
-import "nprogress/nprogress.css";
 
 // styles
 import "@/styles/main.scss";
-// additional styles from third party libraries .
-import "react-multi-carousel/lib/styles.css";
-// import Loading from "@/UiComponent/Loading";
 
 import ErrorBoundary from "@/tools/HOC/Error";
 import CartProvider from "@/tools/Context/cartProvider";
