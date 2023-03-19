@@ -18,6 +18,9 @@ const Components = () => {
 				<BtnPrimary size="sm"> Hello Smlkd </BtnPrimary>
 			</div>
 			{/* <div className="flex__column-center"> */}
+			<button type="button" id="btn-1" className="ripple">
+				Ripple button sdf
+			</button>
 			<H1> Hello h1 tag </H1>
 			<H2> Hello h2 tag </H2>
 			<H3> Hello h3 tag</H3>
@@ -33,24 +36,16 @@ const Components = () => {
 			<hr />
 			<div class="wrapper">
 				<button type="button" id="btn-1" class="ripple">
-					button
+					Ripple button 1
 				</button>
 				<button
 					type="button"
 					id="btn-2"
-					class="ripple"
-					data-ripple-color="#888"
+					class="ripple btn btn-primary"
+					data-ripple-color="#24ce15e1"
 				>
-					button
+					Ripple button 2
 				</button>
-				<div
-					class="ripple"
-					style="width: 300px; height: 100px; background: #ddd;"
-				></div>
-				<div
-					class="ripple"
-					style="width: 100px; height: 300px; background: #ddd;"
-				></div>
 			</div>
 			<P3>
 				{" "}

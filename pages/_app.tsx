@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import Ripple from "@/components/UI/ripple/Ripple";
 import { useRouter } from "next/router";
 import AuthProvider from "@/tools/Context/authProvider";
 
@@ -13,7 +14,7 @@ import CartProvider from "@/tools/Context/cartProvider";
 import MegaHeader from "@/layoutComponent/Mega-Header";
 import Footer from "@/layoutComponent/Footer";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }) => {
 	const Router = useRouter();
 	useEffect(() => {
 		// Start the loading bar when a page starts loading
@@ -30,29 +31,6 @@ const App = ({ Component, pageProps }: AppProps) => {
 			NProgress.done();
 		});
 	}, [Router.events]);
-
-	// RIPPLE effect
-	function rippleClick(event) {
-		const target = event.currentTarget;
-		const ripple = document.createElement("span");
-		ripple.classList.add("ripple-effect");
-		ripple.style.width = ripple.style.height =
-			Math.max(target.offsetWidth, target.offsetHeight) + "px";
-		ripple.style.left =
-			event.pageX - target.offsetLeft - ripple.offsetWidth / 2 + "px";
-		ripple.style.top =
-			event.pageY - target.offsetTop - ripple.offsetHeight / 2 + "px";
-		target.appendChild(ripple);
-		setTimeout(() => target.removeChild(ripple), 500);
-		console.log("ripple elemnts clicked ");
-	}
-
-	// use
-	useLayoutEffect(() => {
-		document.querySelectorAll(".ripple").forEach((el) => {
-			el.addEventListener("click", rippleClick);
-		});
-	}, []);
 
 	// return <Component {...pageProps} />;
 	if (Component.getLayout) {
@@ -79,6 +57,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 				{/* using nprogress for loading   */}
 				{/* <Loading /> */}
 				{/* Header */}
+				<Ripple />
 				<AuthProvider>
 					<CartProvider>
 						<MegaHeader />
