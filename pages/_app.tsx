@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import AuthProvider from "@/tools/Context/authProvider";
@@ -31,6 +31,29 @@ const App = ({ Component, pageProps }: AppProps) => {
 		});
 	}, [Router.events]);
 
+	// RIPPLE effect
+	function rippleClick(event) {
+		const target = event.currentTarget;
+		const ripple = document.createElement("span");
+		ripple.classList.add("ripple-effect");
+		ripple.style.width = ripple.style.height =
+			Math.max(target.offsetWidth, target.offsetHeight) + "px";
+		ripple.style.left =
+			event.pageX - target.offsetLeft - ripple.offsetWidth / 2 + "px";
+		ripple.style.top =
+			event.pageY - target.offsetTop - ripple.offsetHeight / 2 + "px";
+		target.appendChild(ripple);
+		setTimeout(() => target.removeChild(ripple), 500);
+		console.log("ripple elemnts clicked ");
+	}
+
+	// use
+	useLayoutEffect(() => {
+		document.querySelectorAll(".ripple").forEach((el) => {
+			el.addEventListener("click", rippleClick);
+		});
+	}, []);
+
 	// return <Component {...pageProps} />;
 	if (Component.getLayout) {
 		return Component.getLayout(<Component {...pageProps} />);
@@ -42,7 +65,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 					<title>Jonaki Shop Website </title>
 					<meta
 						name="description"
-						content="This is a next js Wocommerce website by shoriful islam "
+						content="This is a next js Woocommerce website by shoriful islam"
 					/>
 
 					<link rel="preconnect" href="https://fonts.googleapis.com" />

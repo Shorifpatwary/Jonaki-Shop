@@ -98,11 +98,6 @@ const ProductsView = ({ title = "title", products = {}, categories = {} }) => {
 					<div className="title col__6">
 						<H3>{title}</H3>
 					</div>
-					{/* <div className="products__info col__2">
-						<PillSecondary className="total__products text__black">
-							{pagination.total}
-						</PillSecondary>
-					</div> */}
 				</div>
 				<hr />
 				<BreadCrumbs />

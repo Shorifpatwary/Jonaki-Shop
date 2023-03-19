@@ -30,7 +30,28 @@ const Components = () => {
 			<h4> Hello this is heading four </h4>
 			<h5> Hello this is heading five </h5>
 			<h6> Hello this is heading six </h6>
-
+			<hr />
+			<div class="wrapper">
+				<button type="button" id="btn-1" class="ripple">
+					button
+				</button>
+				<button
+					type="button"
+					id="btn-2"
+					class="ripple"
+					data-ripple-color="#888"
+				>
+					button
+				</button>
+				<div
+					class="ripple"
+					style="width: 300px; height: 100px; background: #ddd;"
+				></div>
+				<div
+					class="ripple"
+					style="width: 100px; height: 300px; background: #ddd;"
+				></div>
+			</div>
 			<P3>
 				{" "}
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolore,

@@ -2,45 +2,26 @@
 	"header": {
 		"header_top": {
 			"header_info": [
-				{ "text": "Chat with us", "url": "/contact" },
-				{ "text": "+420 336 775 664", "url": "/contact" },
-				{ "text": "info@freshnesecom.com", "url": "/contact" }
+				{ "text": "Chat with us", "url": "/" },
+				{ "text": "+420 336 775 664", "url": "/" },
+				{ "text": "info@freshnesecom.com", "url": "/" }
 			],
 			"header_links": [
-				{ "text": "Blog", "url": "/blog" },
-				{ "text": "About Us", "url": "/about" },
-				{ "text": "Careers", "url": "/careers" }
+				{ "text": "Blog", "url": "/" },
+				{ "text": "About Us", "url": "/" },
+				{ "text": "Careers", "url": "/" }
 			]
 		},
 		"pages": [
 			{ "text": "Home", "url": "/" },
 			{ "text": "Shop", "url": "/products" },
-			{ "text": "Features", "url": "/category" },
-			{ "text": "blog", "url": "/blog" },
-			{ "text": "contact", "url": "/contact" },
 			{ "text": "about", "url": "/about" },
+			{ "text": "registration", "url": "/registration" },
+			{ "text": "profile", "url": "/profile" },
+			{ "text": "cart", "url": "/cart" },
 			{ "text": "FAQ", "url": "/faq" }
 		]
 	},
-	"categories": [
-		{
-			"assets": [
-				{
-					"created_at": 1668775356,
-					"description": null,
-					"file_extension": "png",
-					"file_size": 455671,
-					"filename": "Baby.png",
-					"id": "ast_NqKE50GAx3odgB",
-					"image_dimensions": { "width": 803, "height": 1000 },
-					"is_image": true,
-					"meta": [],
-					"updated_at": 1668775360,
-					"url": "https://cdn.chec.io/merchants/48532/assets/tSSn36iGPl882JSe|Baby.png"
-				}
-			]
-		}
-	],
 	"testimonial": {
 		"title": "Our customers says",
 		"testimonials": [
@@ -101,18 +82,18 @@
 			{
 				"title": "Earnings",
 				"links": [
-					{ "text": "Become an Affiliate", "url": "/about" },
-					{ "text": "Advertise your product", "url": "/careers" },
-					{ "text": "Sell on Market", "url": "/products" }
+					{ "text": "Become an Affiliate", "url": "/" },
+					{ "text": "Advertise your product", "url": "/" },
+					{ "text": "Sell on Market", "url": "/" }
 				]
 			},
 			{
 				"title": "Account",
 				"links": [
-					{ "text": "Your account", "url": "/about" },
-					{ "text": "100 % purchase protection", "url": "/careers" },
-					{ "text": "Chat with us", "url": "/contact" },
-					{ "text": "Help", "url": "/products" }
+					{ "text": "Your account", "url": "/" },
+					{ "text": "100 % purchase protection", "url": "/" },
+					{ "text": "Chat with us", "url": "/" },
+					{ "text": "Help", "url": "/" }
 				]
 			}
 		],
