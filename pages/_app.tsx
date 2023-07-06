@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import Ripple from "@/components/UI/ripple/Ripple.tsx";
+// import Ripple from "@/components/UI/ripple/Ripple.tsx";
 import { useRouter } from "next/router";
 import AuthProvider from "@/tools/Context/authProvider";
 
@@ -57,7 +57,7 @@ const App = ({ Component, pageProps }) => {
 				{/* using nprogress for loading   */}
 				{/* <Loading /> */}
 				{/* Header */}
-				<Ripple />
+				{/* <Ripple /> */}
 				<AuthProvider>
 					<CartProvider>
 						<MegaHeader />
