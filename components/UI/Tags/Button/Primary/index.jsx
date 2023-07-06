@@ -9,7 +9,9 @@ const BtnPrimary = ({
 }) => {
 	return (
 		<TagName
-			className={`${style.Btn__primary} ${style[size]}  ${className || ""}`}
+			className={`${style.Btn__primary} ${style[size]}  ${
+				className || ""
+			} ripple`}
 			{...props}
 		>
 			{children}

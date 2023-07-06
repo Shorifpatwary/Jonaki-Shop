@@ -20,7 +20,7 @@ const Button = ({
 }) => {
 	return (
 		<TagName
-			className={` flex__center  ${style[variant]} ${style[size]}  ${style.Button__class}  ${className}`}
+			className={` flex__center ripple ${style[variant]} ${style[size]}  ${style.Button__class}  ${className}`}
 			{...props}
 		>
 			{icon === "prepend" && (

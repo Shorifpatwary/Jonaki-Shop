@@ -4,7 +4,7 @@ import categories from "@/public/data/categories.json";
 
 const productsPage = ({ categories, products }) => {
 	if (!products.data?.length) {
-		return <h2 style={{ textAlign: "center" }}>No Products Found </h2>;
+		return <h2 style={{ textAlign: "center" }}>No Products Found</h2>;
 	}
 	return (
 		<ProductsView
@@ -14,6 +14,7 @@ const productsPage = ({ categories, products }) => {
 		/>
 	);
 };
+
 // next js server side site generation function
 export async function getServerSideProps(context) {
 	//  products request
@@ -21,6 +22,7 @@ export async function getServerSideProps(context) {
 	for (const [key, value] of Object.entries(context.query)) {
 		queryString += `${key}=${value}&`;
 	}
+
 	// header
 	const headers = {
 		"X-Authorization": process.env.NEXT_PUBLIC_PUBLIC_KEY_LIVE,

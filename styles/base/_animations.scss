@@ -134,23 +134,23 @@
 		transform: rotateY(180deg);
 	}
 }
-.ripple {
-	position: relative;
-	overflow: hidden;
-	padding: 1rem 2rem;
-}
+// .ripple {
+// 	position: relative;
+// 	overflow: hidden;
+// 	padding: 1rem 2rem;
+// }
 
-.ripple-effect {
-	position: absolute;
-	border-radius: 50%;
-	transform: scale(0);
-	animation: ripple 0.7s linear;
-	background-color: rgba(209, 28, 28, 0.7);
-}
+// .ripple-effect {
+// 	position: absolute;
+// 	border-radius: 50%;
+// 	transform: scale(0);
+// 	animation: ripple 0.7s linear;
+// 	background-color: rgba(161, 159, 159, 0.418);
+// }
 
-@keyframes ripple {
-	to {
-		transform: scale(4);
-		opacity: 0;
-	}
-}
+// @keyframes ripple {
+// 	to {
+// 		transform: scale(4);
+// 		opacity: 0;
+// 	}
+// }

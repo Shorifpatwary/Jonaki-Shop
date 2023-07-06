@@ -73,7 +73,7 @@ const SearchBox = ({ className = "", ...props }) => {
 				</div>
 				<button
 					onClick={(e) => handleSubmit(e)}
-					className={`w__1 ${style.searchIcon}`}
+					className={`w__1 ripple ${style.searchIcon} `}
 				>
 					<img src={searchIcon.src} alt="search icon" />
 				</button>
