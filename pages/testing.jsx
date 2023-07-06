@@ -1,8 +1,7 @@
 
-// import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { useState } from "react";
-const { blog_folder, pagination } = config.settings;
+
 const Home = ({
   posts,
 }) => {
@@ -15,9 +14,7 @@ const Home = ({
     console.log("nothing return ");
     console.log(apiresponse);
   }
-  return (
-    "This is jonaki testing page : localhost api testing "; 
-  );
+  return (<div>This is jonaki testing page : localhost api testing</div>);
 };
 
 export default Home;
@@ -25,12 +22,12 @@ export default Home;
 // for homepage sever side data
 export const getServerSideProps = async () => {
   const response = await fetch("http://127.0.0.1:8000/api/posts");
-  if (response.ok) {
-    const posts = await response.json();
-    setApiresponse("success response");
-  } else {
-    setApiresponse("error response");
-  }
+  // if (response.ok) {
+    var posts = await response.json();
+    // setApiresponse("success response");
+  // } else {
+  //   setApiresponse("error response");
+  // }
   return {
     props: {
       posts,
