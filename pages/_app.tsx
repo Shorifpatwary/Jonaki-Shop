@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import Ripple from "@/components/UI/ripple/Ripple";
+import Ripple from "@/components/UI/ripple/Ripple.tsx";
 import { useRouter } from "next/router";
 import AuthProvider from "@/tools/Context/authProvider";
 

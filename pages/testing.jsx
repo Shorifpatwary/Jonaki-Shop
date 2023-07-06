@@ -14,7 +14,7 @@ const Home = ({
     console.log("nothing return ");
     console.log(apiresponse);
   }
-  return (<div>This is jonaki testing page : localhost api testing</div>);
+  return (<div><h2>This is jonaki testing page : localhost api testing</h2></div>);
 };
 
 export default Home;
