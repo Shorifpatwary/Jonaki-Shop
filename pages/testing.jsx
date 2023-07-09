@@ -14,7 +14,7 @@ const Home = ({
     console.log("nothing return ");
     console.log(apiresponse);
   }
-  return (<div><h2>This is jonaki testing page : localhost api testing</h2></div>);
+  // return (<div><h2>This is jonaki testing page : localhost api testing</h2></div>);
 };
 
 export default Home;
@@ -22,13 +22,9 @@ export default Home;
 // for homepage sever side data
 export const getServerSideProps = async () => {
   const response = await fetch("http://127.0.0.1:8000/api/posts");
-  // if (response.ok) {
-    var posts = await response.json();
-    // setApiresponse("success response");
-  // } else {
-  //   setApiresponse("error response");
-  // }
-  return {
+  var posts = await response.json();
+
+    return {
     props: {
       posts,
     },
